@@ -1,0 +1,64 @@
+<!-- liste des server-->		       
+<table id="reviewlite_server" header="Server list" searchbox bottom="60">
+  <thead>
+	<tr>
+	  <th width="40px"><input id="reviewlite_select_all" type="checkbox" class="editor-active"></th>
+	  <th width="40px">status</th>
+	  <th key>physical_srv_name</th>
+	  <th width="80px">Start hour</th>
+	  <th width="80px">sqlplus_port</th>
+	  <th width="150px">timestamp_try</th>
+	  <th width="150px">timestamp_result</th>
+	  <th width="150px">user_id</th>
+	  <th width="150px">action</th>
+	</tr>
+  </thead>
+</table>
+       
+<!-- liste des base-->		     
+<table id="reviewlite_database" header="Server Database" filter bottom="60" right="0">
+  <thead>
+	<tr>
+	  <th width="40px">status</th>
+	  <th  width="150px" key>physical_srv_name</th>             
+	  <th  width="150px">db_name</th>
+	</tr>
+  </thead>
+</table>
+      
+     
+<!-- outils-->		 
+<div id="reviewlite_tools">               
+<!-- modification de la config d'un serveur-->            
+ 
+	<div class="input-group">
+	  <span class="input-group-addon">Start Hour</span>
+	  <input id="reviewlite_start" name="start_hour" class="form-control" placeholder="00:00" type="time">
+	</div>            
+		
+  
+	<div class="input-group">
+	  <span class="input-group-addon">SqlPlus Port</span>
+	  <input id="reviewlite_port" name="sqlplus_port" class="form-control" placeholder="1521" type="number">
+	</div>    
+
+	<a class="btn reviewlite_tools  " href="#" data-toggle="tooltip" title="Modify" id="reviewlite_server_config">
+	  <i class="fa fa-pencil-square-o fa-2x"></i> <span class="trad"> Modify</span></a>
+	 <!-- import/export -->             
+
+	<form id="reviewlite_upload" enctype="multipart/form-data" action="" method="post" target="_target">
+	  <input id="reviewlite_choose_input" name="uploaded_file" type="file" accept=".zip" />
+	</form>
+
+	<a id="reviewlite_choose"   class="btn reviewlite_tools  " href="#" data-toggle="tooltip"
+		  title="Upload reviewlite result">
+	   <i class="fa fa-upload fa-2x"></i> <span class="trad">Upload</span></a>
+	
+	<a id="reviewlite_download"   class="btn reviewlite_tools " href="#" data-toggle="tooltip" 
+		title="Download reviewlite result">
+	  <i class="fa fa-download fa-2x"></i> <span class="trad">download</span></a>
+
+	<a id="reviewlite_launch" class="btn reviewlite_tools " href="#" data-toggle="tooltip" 
+		 title="Launch reviewlite for selected server">
+	  <i class="fa fa-refresh fa-2x"></i> <span class="trad">Launch</span></a>    
+</div>   

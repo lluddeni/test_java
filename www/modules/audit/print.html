@@ -1,0 +1,184 @@
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Licence Conformity</title>
+
+  <link href="../../assets/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+ 
+ 
+  <link href="../../modules/audit/audit.css" rel="stylesheet">
+  <link href="print.css" rel="stylesheet">
+ </head>
+ 
+<script src="../../model/vendor/jquery/jquery.min.js"></script>
+<script>
+
+$(function () {
+
+var urlParams;
+var par_id ;
+var list_boards = null;
+var toc = "";
+
+getUrlParams();
+
+
+
+$.get("/?mod=audit&fct=get_audit_json&type=json&session_id="+
+		urlParams["session_id"]+"&id="+urlParams["id"],							
+	function (res)
+	{
+		var rep=formatReport(res);
+		$("#audit").html(toc+"<div id='audit_reset' />"+rep);
+		
+		if(urlParams["print"])
+			window.print();
+	});
+
+function replaceAll(str, find, replace) 
+{
+    return str.replace(new RegExp(find, 'g'), replace);
+}
+
+ function auditAlert(value)
+ {
+	if(value==null)
+		return "";
+	 return "audit_alert";
+
+ }
+ 
+ function formatBoard(board)
+ {
+		var res="";
+
+		if(board.error!=null)
+		{
+			res+="<pre>"+board.error+"</pre>";
+		}
+		else
+		{
+			res+="<table class='audit_board audit_table' ><tr class='header'>";
+					
+			var static = board.type == "static"	;
+			board.headers.forEach(function(header,i)
+			{
+				if(static || i>0)
+					res+="<th>"+header+"</th>";
+			});
+			res+="</tr>";
+
+			board.rows.forEach(function(values,i)
+			{
+				if(static)
+					res+="<tr class='static'>";
+				else
+					res+="<tr class='data'>";
+				
+										
+				values.forEach(function(col,i)
+				{
+					if(static)
+					{
+						res+="<td>"+col+"</td>";
+					}
+				 	else if(i>0)
+					{									
+						if(col.o!=null)
+							res+="<td><div class='audit2 "+auditAlert(col.e)+"'>"+col.v+"</div><div class='audit1 "+col.o+"'>"+"</div></td>";						
+						else
+							res+="<td class='"+auditAlert(col.e)+"'>"+col.v+"</td>";
+					}
+				});
+				res+="</tr>";
+			});
+			res+="</table>";
+		}	
+
+		return res;	
+ }
+ 
+ function formatParagraph(data,deep)
+ {
+ 
+	var res = "";
+	data.forEach(function(paragraph,i)
+	{
+		if(paragraph.title!=null)
+		{
+			var id = "audit_par_"+(par_id++);
+			res+="<h"+deep+" id='"+id+"'>"+paragraph.title+"</h"+deep+">";
+
+			toc+="<h"+deep+"><a href='#"+id+"'>"+paragraph.title+"</a></h"+deep+">";
+		}
+		else if(paragraph.comment!=null)
+		{			
+			if(paragraph.comment.text!=null && paragraph.comment.text!="")
+				res+="<pre class='audit_comment'>"+replaceAll(paragraph.comment.text,"\n","<br/>")+"</pre>";
+		}
+		else if(paragraph.board!=null)
+		{
+
+			list_boards.forEach(function(board,i)
+			{		
+				if(board.name == paragraph.board)
+				{
+					res+=formatBoard(board);
+				}
+			});
+
+		}
+		else if(paragraph!=null)
+			res +=formatParagraph(paragraph,deep+1);
+	});
+	return res;
+ }
+
+
+	
+// format les données du rapport
+function formatReport(data)
+{
+					  
+
+	if(data.error !=null)
+	{
+		return data.error;
+	}
+	
+	par_id = 1;
+	list_boards = data.boards;
+
+	return formatParagraph(data.doc,2);
+	
+}
+
+	
+
+
+function getUrlParams()
+  {
+      var match,
+          pl     = /\+/g,  // Regex for replacing addition symbol with a space
+          search = /([^&=]+)=?([^&]*)/g,
+          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+          query  = window.location.search.substring(1);
+
+      urlParams = {};
+      while (match = search.exec(query))
+         urlParams[decode(match[1])] = decode(match[2]);
+  }
+  
+  });
+</script>
+
+<body>
+<div id="audit"></div>
+</body>
+</html>

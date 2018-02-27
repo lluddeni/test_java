@@ -1,0 +1,280 @@
+
+
+/***************************************/
+/*              audit                  */
+/***************************************/
+
+#audit_tools
+{
+  position:absolute;
+  bottom:10px;
+  left:0px;
+}
+
+#audit_upload
+{
+  display:none;
+}
+
+.audit_tools
+{
+ 
+  height:50px;
+  padding:10px;
+  margin-left:20px;
+
+}
+
+#audit_report
+{
+  margin-left:0px; 
+  overflow-y:scroll;
+  margin-top:5px;
+  width:100%
+}
+
+
+#audit_result_row
+{
+  position:absolute; 
+  left:750px; 
+  top:230px;
+}
+#audit_alert
+{
+   position:absolute; 
+   left:750px; 
+   top:20px;
+   height:200px;
+}
+
+#audit_alert_ack
+{
+   position:absolute; 
+   top:23px;
+   right:210px;
+   height:35px;
+   width:150px!important;
+   z-index:1!important;
+}
+
+#audit_history
+{
+ position:absolute;
+ 
+}
+
+.audit_radio
+{
+  width:20px;
+  height:20px;
+
+}
+
+.audit2
+{
+  BACKGROUND-COLOR:#99FFCC;
+}
+
+.audit1
+{
+  BACKGROUND-COLOR:#CB6D6D;
+  COLOR:white;
+}
+
+#audit_find
+{
+  position:absolute;
+  right:0px;
+  top:5px;
+  display:none;
+}
+.audit_find 
+{
+  margin-right:0px;
+}
+.audit_find:hover
+{
+  color:#a5a5a5;
+}
+#audit_find_count
+{
+   position:absolute;
+   font-size:20px;
+   right:55px;
+   width:100px;
+
+   text-align:center;
+}
+#audit_find_prev
+{
+    position:absolute;
+    right:150px;
+}
+
+#audit_find_next
+{
+    position:absolute;
+    right:30px;
+}
+
+.audit_check_disabled
+{
+  opacity:0.1;
+}
+
+.audit_use_data
+{
+  
+}
+.audit_find_selected
+{
+ background-color:lightblue!important;
+}
+
+
+.audit_table
+{
+ margin-bottom:30px;
+}
+
+.audit_table .header
+{
+ 
+ 
+}
+
+
+.audit_table tr.data:nth-child(even),tr.static:nth-child(even)
+{
+  background-color:#edeff1;
+  
+  padding:5px;
+  border:solid 2px white;
+
+}
+
+.audit_table  td
+{
+   padding:5px;
+   border:solid 2px white;
+   white-space: normal;
+   max-width:500px;
+}
+
+.audit_table tr.data td:nth-child(2)
+{
+   font-weight:bold;
+
+}
+
+.audit_table tr.static td:nth-child(1)
+{
+  font-weight:bold;
+}
+
+.audit_board
+{
+
+}
+
+.audit_alert
+{
+padding-left:5px!important;
+color:red;
+}
+
+
+#audit_boards
+{
+  position:absolute;
+  left:130px;
+  top:7px;
+  width:500px;
+}
+
+.audit_alert_selected
+{
+  background-color:#dfda7f;
+}
+
+.audit_table  th
+{
+  background-color:lightgrey;
+  
+  white-space: normal;
+  max-width:200px;
+  padding:5px;
+  border:solid 2px white;
+}
+
+.audit_board_option
+{
+  color:red;
+  font-weight:bold;
+}
+
+#audit {
+  counter-reset: h2;
+}
+
+#audit h2,h3,h4,h5
+{
+  color:#7c489e;
+   white-space:pre;
+}
+
+#audit h2:before {
+  content: "" counter(h2) " ";
+  counter-increment: h2;
+
+}
+#audit h3:before {
+  content: "  "  counter(h2) "." counter(h3) " ";
+  counter-increment: h3;
+}
+#audit h4:before {
+  content: "     "  counter(h2) "." counter(h3)"." counter(h4) " ";
+  counter-increment: h4;
+}
+#audit h5:before {
+  content: "         "   counter(h2) "." counter(h3)"." counter(h4) "." counter(h5)" ";
+  counter-increment: h5;
+}
+
+#audit h2 {
+  counter-reset: h3;
+}
+#audit h3 {
+  counter-reset: h4;
+}
+#audit h4 {
+  counter-reset: h5;
+}
+
+#audit p 
+{
+  width:970px;
+  font-size:18px;
+  white-space: normal;
+
+}
+
+#audit textarea,pre.audit_comment
+{
+  width:970px;
+  font-size:18px;
+  resize:none;
+  overflow:hidden;
+  white-space: normal;
+  padding:5px;
+  background-color:#f9f9f9;
+  border:none;
+  margin-bottom:10px
+}
+#audit textarea
+{
+  display:none;
+ 
+}
+

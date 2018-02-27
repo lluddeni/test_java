@@ -1,0 +1,77 @@
+
+
+/***************************************/
+/*              audit                  */
+/***************************************/
+
+
+#audit
+{
+
+ padding:20px;
+ font-family: monospace;
+ font-size:20px;
+}
+
+.audit_table
+{
+ font-size:15px;
+}
+
+.audit_table .header
+{
+ 
+ 
+}
+
+.audit_table  th
+{
+  background-color:lightgrey!important;
+   -webkit-print-color-adjust: exact; 
+  padding:5px;
+
+}
+
+
+.audit_table tr.data:nth-child(even)
+{
+  background-color:#edeff1!important;
+   -webkit-print-color-adjust: exact; 
+  padding:5px;
+  
+
+}
+
+.audit_table  td
+{
+   padding:5px;
+
+  
+}
+
+.audit_section
+{
+  padding-top:20px;
+  padding-bottom:10px;
+  font-weight:bold;
+}
+
+
+.audit_alert
+{
+  background-color:red;
+  color:white;
+  font-weight:bold;
+}
+
+#audit_reset
+{
+    counter-reset: h2;
+    width:100%;
+    border-top:solid;
+}
+
+pre
+{
+  background-color:white!important;
+}

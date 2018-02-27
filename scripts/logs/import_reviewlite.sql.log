@@ -1,0 +1,38 @@
+2018-02-26T10:38:55.802
+ERROR:
+
+RESULT:
+Vous �tes maintenant connect� � la base de donn�es � licence_conformity � en tant qu'utilisateur � postgres �.
+
+Flush tables
+==============
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+TRUNCATE TABLE
+
+Import
+==============
+Import fichier Release
+COPY 93
+Import fichier Feature
+COPY 533
+Import fichier parameters
+COPY 93
+Import fichier hwm_sessions
+COPY 93
+Import fichier partitioning
+COPY 1046
+Import fichier spatial
+COPY 49
+Import fichier cpu_max
+COPY 193
+Import fichier heap_compression
+COPY 0
+Import fichier datapump_compression
+COPY 0

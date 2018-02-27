@@ -1,0 +1,240 @@
+2018-01-12T12:47:52.240
+ERROR:
+psql:D:/DevSetra/LicenceConformity/data/BSP/audit/31/analyse.sql:13: ERREUR:  erreur de syntaxe sur ou près de « ﻿ »
+LIGNE 1 : ﻿
+          ^
+
+RESULT:
+Vous �tes maintenant connect� � la base de donn�es � licence_conformity � en tant qu'utilisateur � postgres �.
+L'utilisation du paginateur est d�sactiv�.
+
+Serveurs physiques
+====================================================================
+ vCenter  | Cluster VMware | vSphere version | Physical server name | CPU model | #cpu | #core / cpu | #core | Core factor |       Edition eligibility        
+----------+----------------+-----------------+----------------------+-----------+------+-------------+-------+-------------+----------------------------------
+ Capped   | NA             | 8               | sbaspsoora1          | NA        |  0.9 |           1 |   0.9 |           1 | All editions
+ Capped   | NA             | 3               | sdevora1             | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | 6               | sdevpsoora1          | NA        |    4 |           1 |     4 |           1 | EE and SE only (not SE1 nor SE2)
+ Capped   | NA             | 8               | sdwdev1              | NA        |    3 |           1 |     3 |           1 | EE and SE only (not SE1 nor SE2)
+ Capped   | NA             | 5               | sdwdev2              | NA        |  1.1 |           1 |   1.1 |           1 | All editions
+ Capped   | NA             | 8               | sdwpre1              | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | 10              | sdwpro1              | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | 0               | sdwtec1              | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | 1               | sgsoradev1           | NA        |    3 |           1 |     3 |           1 | EE and SE only (not SE1 nor SE2)
+ Capped   | NA             | 5               | sgsorapre1           | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | NA              | sgsorapro1           | NA        |    8 |           1 |     8 |           1 | EE only
+ Capped   | NA             | NA              | sgsorapro2           | NA        |    1 |           1 |     1 |           1 | All editions
+ Capped   | NA             | NA              | sgsorarec1           | NA        |    1 |           1 |     1 |           1 | All editions
+ Capped   | NA             | NA              | spreora1             | NA        |    1 |           1 |     1 |           1 | All editions
+ Capped   | NA             | NA              | sprepfeora1          | NA        |    1 |           1 |     1 |           1 | All editions
+ Capped   | NA             | NA              | sproora1             | NA        |    2 |           1 |     2 |           1 | All editions
+ Capped   | NA             | NA              | spropfeora1          | NA        |    1 |           1 |     1 |           1 | All editions
+ Capped   | NA             | NA              | stecpfeora1          | NA        |    1 |           1 |     1 |           1 | All editions
+ Uncapped | NA             | 6               | sbacdstbiu1          | NA        |    2 |           1 |     2 |           1 | All editions
+ Uncapped | NA             | 13              | sgsadm1              | NA        |    1 |           1 |     1 |           1 | All editions
+(20 lignes)
+
+Détail des éditions et versions de bases de données
+====================================================================
+ Virtual server name | Database name |             Edition              | Version  | Physical server name 
+---------------------+---------------+----------------------------------+----------+----------------------
+ sbaspsoora1         | PSOBAS        | Enterprise                       | 12.1.0.2 | sbaspsoora1
+ sdevora1            | ESBDEV1       | Unknown - check data consistency |          | sdevora1
+ sdevora1            | ESBREC1       | Unknown - check data consistency |          | sdevora1
+ sdevora1            | ESBTEST1      | Unknown - check data consistency |          | sdevora1
+ sdevora1            | MDMDEV1       | Unknown - check data consistency |          | sdevora1
+ sdevora1            | MDMREC1       | Unknown - check data consistency |          | sdevora1
+ sdevora1            | MDMTEST1      | Unknown - check data consistency |          | sdevora1
+ sdevora1            | PFEDEV        | Unknown - check data consistency |          | sdevora1
+ sdevora1            | PFEINT        | Unknown - check data consistency |          | sdevora1
+ sdevora1            | PFEREC        | Unknown - check data consistency |          | sdevora1
+ sdevora1            | SPOTREC1      | Unknown - check data consistency |          | sdevora1
+ sdevora1            | TIBDP1        | Unknown - check data consistency |          | sdevora1
+ sdevora1            | TIBINT        | Unknown - check data consistency |          | sdevora1
+ sdevora1            | TIBREC        | Unknown - check data consistency |          | sdevora1
+ sdevpsoora1         | PSOBAC        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSODEV        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSODP1        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSOINT        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSOIP1        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSOREF        | Unknown - check data consistency |          | sdevpsoora1
+ sdevpsoora1         | PSOSBY        | Unknown - check data consistency |          | sdevpsoora1
+ sdwdev1             | BIDEV         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIDEV2        | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIDGPS        | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIDGPSBA      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIDGPSCO      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIDGPSDS      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIREC         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIRGPSCA      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | BIRGPSGS      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | CMDEV1        | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | COG11DEV      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | COG11REC      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | COGDEV        | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | COGPRE        | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DSDEV         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DSDEVPFE      | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DSPOC         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DSREC         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DWDEV         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | DWREC         | Unknown - check data consistency |          | sdwdev1
+ sdwdev1             | PLANTST       | Unknown - check data consistency |          | sdwdev1
+ sdwdev2             | COGBAC        | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | COGBACDW      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | COGDP1DW      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | COGDV2        | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | COGIP1DW      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | DSTBACBI      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | DSTDEVBI      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | DSTDEVEX      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | DSTRECBI      | Unknown - check data consistency |          | sdwdev2
+ sdwdev2             | DSTRECEX      | Unknown - check data consistency |          | sdwdev2
+ sdwpre1             | BIPRE         | Enterprise                       | 11.2.0.3 | sdwpre1
+ sdwpre1             | COG11PRE      | Enterprise                       | 11.2.0.3 | sdwpre1
+ sdwpre1             | DSPRE         | Enterprise                       | 11.2.0.3 | sdwpre1
+ sdwpre1             | DWPRE         | Enterprise                       | 11.2.0.3 | sdwpre1
+ sdwpro1             | BDOLL         | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | BIPRO         | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | COG11PRO      | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | COGPRO        | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | DSPRO         | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | DWPRO         | Unknown - check data consistency |          | sdwpro1
+ sdwpro1             | PLANPRO       | Unknown - check data consistency |          | sdwpro1
+ sdwtec1             | DSTTECEX      | Unknown - check data consistency |          | sdwtec1
+ sgsadm1             | BRMAN         | Unknown - check data consistency |          | sgsadm1
+ sgsoradev1          | DSNBAC        | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | DSNREP        | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRBAC         | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRDEV         | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRFOR         | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRINT         | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRREF         | Unknown - check data consistency |          | sgsoradev1
+ sgsoradev1          | HRREP         | Unknown - check data consistency |          | sgsoradev1
+ sgsorapre1          | DSNPRE        | Unknown - check data consistency |          | sgsorapre1
+ sgsorapre1          | HRPR2         | Unknown - check data consistency |          | sgsorapre1
+ sgsorapre1          | HRPRE         | Unknown - check data consistency |          | sgsorapre1
+ sgsorapro1          | DSNPRO        | Unknown - check data consistency |          | sgsorapro1
+ sgsorapro1          | HRPRO         | Unknown - check data consistency |          | sgsorapro1
+ sgsorapro2          | HRPROD        | Unknown - check data consistency |          | sgsorapro2
+ sgsorarec1          | DSNREC        | Unknown - check data consistency |          | sgsorarec1
+ sgsorarec1          | HRREC         | Unknown - check data consistency |          | sgsorarec1
+ spreora1            | ESBPREP1      | Unknown - check data consistency |          | spreora1
+ spreora1            | MDMPREP1      | Unknown - check data consistency |          | spreora1
+ spreora1            | SPOTPREP1     | Unknown - check data consistency |          | spreora1
+ sprepfeora1         | PFEPRE        | Unknown - check data consistency |          | sprepfeora1
+ sprepfeora1         | TIBPRE        | Unknown - check data consistency |          | sprepfeora1
+ sproora1            | ESBPROD1      | Unknown - check data consistency |          | sproora1
+ sproora1            | MDMPROD1      | Unknown - check data consistency |          | sproora1
+ sproora1            | SPOTPROD1     | Unknown - check data consistency |          | sproora1
+ spropfeora1         | PFEPRO        | Unknown - check data consistency |          | spropfeora1
+ spropfeora1         | TIBPRO        | Unknown - check data consistency |          | spropfeora1
+ stecpfeora1         | PFETEC        | Unknown - check data consistency |          | stecpfeora1
+ stecpfeora1         | TIBTEC        | Unknown - check data consistency |          | stecpfeora1
+(93 lignes)
+
+Licences nécessaires
+====================================================================
+ vCenter  | Cluster VMware | Physical server name | #cpu | #core | Core factor |       Edition eligibility        | # lic proc SE | min NUP SE/SE1 | min NUP SE2 | # lic proc EE | min NUP EE | Editions found 
+----------+----------------+----------------------+------+-------+-------------+----------------------------------+---------------+----------------+-------------+---------------+------------+----------------
+ Capped   | NA             | sbaspsoora1          |  0.9 |   0.9 |           1 | All editions                     | 0.9           | 5              | 10          |           0.9 |         23 | EE
+ Capped   | NA             | sdevora1             |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Capped   | NA             | sdevpsoora1          |    4 |     4 |           1 | EE and SE only (not SE1 nor SE2) | 4             | 5              | N/A         |             4 |        100 | ?
+ Capped   | NA             | sdwdev1              |    3 |     3 |           1 | EE and SE only (not SE1 nor SE2) | 3             | 5              | N/A         |             3 |         75 | ?
+ Capped   | NA             | sdwdev2              |  1.1 |   1.1 |           1 | All editions                     | 1.1           | 5              | 10          |           1.1 |         28 | ?
+ Capped   | NA             | sdwpre1              |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | EE
+ Capped   | NA             | sdwpro1              |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Capped   | NA             | sdwtec1              |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Capped   | NA             | sgsoradev1           |    3 |     3 |           1 | EE and SE only (not SE1 nor SE2) | 3             | 5              | N/A         |             3 |         75 | ?
+ Capped   | NA             | sgsorapre1           |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Capped   | NA             | sgsorapro1           |    8 |     8 |           1 | EE only                          | N/A           | N/A            | N/A         |             8 |        200 | ?
+ Capped   | NA             | sgsorapro2           |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Capped   | NA             | sgsorarec1           |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Capped   | NA             | spreora1             |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Capped   | NA             | sprepfeora1          |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Capped   | NA             | sproora1             |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Capped   | NA             | spropfeora1          |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Capped   | NA             | stecpfeora1          |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+ Uncapped | NA             | sbacdstbiu1          |    2 |     2 |           1 | All editions                     | 2             | 5              | 10          |             2 |         50 | ?
+ Uncapped | NA             | sgsadm1              |    1 |     1 |           1 | All editions                     | 1             | 5              | 10          |             1 |         25 | ?
+(20 lignes)
+
+Contrôles des packs de management
+====================================================================
+ Virtual server name | Database name | Control management pack access 
+---------------------+---------------+--------------------------------
+ sbaspsoora1         | PSOBAS        | DIAGNOSTIC
+ sdwpre1             | BIPRE         | DIAGNOSTIC
+ sdwpre1             | COG11PRE      | DIAGNOSTIC
+ sdwpre1             | DSPRE         | DIAGNOSTIC
+ sdwpre1             | DWPRE         | DIAGNOSTIC
+(5 lignes)
+
+Fonctionnalités soumises à licence --utilisées il y a plus de 700 jours
+========================================================================
+ Virtual server name | Database name |                        pack                         |           Feature used           | sum | First usage | Last usage | Last usage days ago 
+---------------------+---------------+-----------------------------------------------------+----------------------------------+-----+-------------+------------+---------------------
+ sbaspsoora1         | PSOBAS        | Advanced Compression ? (further information needed) | HeapCompression                  |   4 | 25/09/2017  | 16/10/2017 |                  88
+ sbaspsoora1         | PSOBAS        | Tuning Pack                                         | Real-Time SQL Monitoring         |   1 | 25/07/2017  | 25/07/2017 |                 171
+ sdwpre1             | BIPRE         | Advanced Compression ? (further information needed) | Oracle Utility Datapump (Export) |  10 | 14/03/2015  | 12/04/2017 |                 275
+ sdwpre1             | BIPRE         | Diagnostic Pack                                     | AWR Report                       |   3 | 19/03/2016  | 27/02/2017 |                 319
+ sdwpre1             | BIPRE         | Diagnostic Pack                                     | EM Performance Page              |   1 | 10/09/2016  | 10/09/2016 |                 489
+ sdwpre1             | BIPRE         | Partitioning                                        | Partitioning (user)              | 134 | 10/07/2017  | 14/10/2017 |                  90
+ sdwpre1             | BIPRE         | Tuning Pack                                         | SQL Monitoring and Tuning pages  |   1 | 20/02/2017  | 20/02/2017 |                 326
+ sdwpre1             | COG11PRE      | Advanced Compression ? (further information needed) | HeapCompression                  |   4 | 01/02/2014  | 23/11/2012 |                1441
+ sdwpre1             | DWPRE         | Advanced Compression ? (further information needed) | HeapCompression                  |   7 | 09/12/2011  | 18/10/2012 |                1436
+ sdwpre1             | DWPRE         | Advanced Compression ? (further information needed) | Oracle Utility Datapump (Export) |   2 | 09/09/2017  | 28/04/2017 |                 125
+ sdwpre1             | DWPRE         | Diagnostic Pack                                     | AWR Report                       |   3 | 01/11/2012  | 11/02/2016 |                 701
+ sdwpre1             | DWPRE         | Diagnostic Pack                                     | Diagnostic Pack                  |   1 | 01/11/2012  | 01/11/2012 |                1898
+(12 lignes)
+
+Synthèse des options soumises à licence utilisées
+====================================================================
+ Virtual server name | Database name |                                             Pack(s)                                             
+---------------------+---------------+-------------------------------------------------------------------------------------------------
+ sdwpre1             | BIPRE         | Advanced Compression ? (further information needed), Diagnostic Pack, Partitioning, Tuning Pack
+ sdwpre1             | COG11PRE      | Advanced Compression ? (further information needed)
+ sdwpre1             | DWPRE         | Advanced Compression ? (further information needed), Diagnostic Pack
+ sbaspsoora1         | PSOBAS        | Advanced Compression ? (further information needed), Tuning Pack
+(4 lignes)
+
+Récapitulatif des serveurs physiques avec des options utilisés
+====================================================================
+ Physical server name |                                             Pack(s)                                             
+----------------------+-------------------------------------------------------------------------------------------------
+ sbaspsoora1          | Advanced Compression ? (further information needed), Tuning Pack
+ sdwpre1              | Advanced Compression ? (further information needed), Diagnostic Pack, Partitioning, Tuning Pack
+(2 lignes)
+
+        Entity        | Database name | Virtual server name | Physical server name | Advanced Compression ? (further information needed) | Diagnostic Pack | Partitioning | Tuning Pack 
+----------------------+---------------+---------------------+----------------------+-----------------------------------------------------+-----------------+--------------+-------------
+ BIPRE @ sdwpre1      | BIPRE         | sdwpre1             | sdwpre1              | X                                                   | X               | X            | X
+ COG11PRE @ sdwpre1   | COG11PRE      | sdwpre1             | sdwpre1              | X                                                   |                 |              | 
+ DWPRE @ sdwpre1      | DWPRE         | sdwpre1             | sdwpre1              | X                                                   | X               |              | 
+ PSOBAS @ sbaspsoora1 | PSOBAS        | sbaspsoora1         | sbaspsoora1          | X                                                   |                 |              | X
+(4 lignes)
+
+ Physical server name | Advanced Compression ? (further information needed) | Diagnostic Pack | Partitioning | Tuning Pack 
+----------------------+-----------------------------------------------------+-----------------+--------------+-------------
+ sbaspsoora1          | X                                                   |                 |              | X
+ sdevora1             |                                                     |                 |              | 
+ sdevpsoora1          |                                                     |                 |              | 
+ sdwdev1              |                                                     |                 |              | 
+ sdwdev2              |                                                     |                 |              | 
+ sdwpre1              | X                                                   | X               | X            | X
+ sdwpro1              |                                                     |                 |              | 
+ sdwtec1              |                                                     |                 |              | 
+ sgsadm1              |                                                     |                 |              | 
+ sgsoradev1           |                                                     |                 |              | 
+ sgsorapre1           |                                                     |                 |              | 
+ sgsorapro1           |                                                     |                 |              | 
+ sgsorapro2           |                                                     |                 |              | 
+ sgsorarec1           |                                                     |                 |              | 
+ spreora1             |                                                     |                 |              | 
+ sprepfeora1          |                                                     |                 |              | 
+ sproora1             |                                                     |                 |              | 
+ spropfeora1          |                                                     |                 |              | 
+ stecpfeora1          |                                                     |                 |              | 
+                      |                                                     |                 |              | 
+(20 lignes)
+

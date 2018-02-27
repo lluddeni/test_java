@@ -1,0 +1,1 @@
+COPY inventory_servers_licences_history FROM 'D:/DevSetra/LicenceConform/temp/history.csv' WITH CSV DELIMITER ';'

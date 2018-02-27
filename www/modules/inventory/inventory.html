@@ -1,0 +1,185 @@
+<!-- liste historiques-->		
+<table  id="inventory_action" header="History" searchbox clickfirst bottom="60">       
+<thead>          
+  <tr>            
+	<th key width="0">id</th>
+	<th width="150px">time</th>
+	<th width="150px">name</th>
+	<th width="150px" >role</th>
+	<th width="150px">action</th>
+	<th width="40px">XlSX</th>
+	<th width="40px">DOC</th>
+  </tr>
+</thead>
+</table>
+
+<!-- outils-->		      
+<div id="inventory_import_button" class="input-group ">            
+
+	<form id="inventory_upload_xlsx" enctype="multipart/form-data" action="" method="post" target="_target">
+	  <input id="inventory_choose_xlsx_input" name="uploaded_file" type="file" accept=".xlsx" />            
+	</form>
+
+	<form id="inventory_upload_doc" enctype="multipart/form-data" action="" method="post" target="_target">
+	  <input id="inventory_choose_doc_input"  name="uploaded_file" type="file" />              
+	</form>
+   
+	<div class=" input-group">
+			
+			 <a id="inventory_choose_xlsx" disabled  class="btn " href="#" data-toggle="tooltip"
+					title="Choose inventory file"><i class="fa fa-file-excel-o fa-2x"></i>
+			 <div id="inventory_choose_xlsx_file" class="import_file fa fa-times fa-2x" ></div>
+
+			 </a>
+
+	  </div>
+	
+	<div class="input-group">
+			 <a id="inventory_choose_doc" disabled  class="btn " href="#" data-toggle="tooltip"
+					title="Choose inventory doc"><i class="fa fa-file-text fa-2x"></i>
+			   <div id="inventory_choose_doc_file" class="import_file fa fa-times fa-2x" ></div>
+
+			 </a>
+	 </div>
+ 
+  
+	<a id="inventory_import" class="inactive valid_cancel btn" href="#" data-toggle="tooltip"
+			title="Import inventory"><i class="fa fa-fw fa-upload fa-2x"></i><span class="trad">Upload</span>
+	 </a>
+	<a id="inventory_cancel"  class="inactive  valid_cancel btn" href="#" data-toggle="tooltip"
+			title="Cancel import"><i class="fa fa-fw fa-ban fa-2x"></i><span  class="trad">Cancel</span>
+	 </a>
+	<a id="inventory_get_last"  class="btn" href="#" data-toggle="tooltip"
+			title="Get last inventory"><i class="fa fa-fw fa-download fa-2x"></i><span  class="trad">Download</span>
+	 </a>
+  </div>
+    
+<!-- detail de l'inventaire-->		
+<div id="inventory_detail_row" bottom="60" right="0">
+  
+	<!-- choix des listes-->		
+	<div class="btn-group" data-toggle="buttons" id="inventory_select_table">
+		<label  class="btn btn-default selected" data-target="#inventory_servers" id="inventory_servers_history">
+		  <input type="radio" ><span class="trad">Server</span></input>
+		</label>
+		<label class="btn btn-default" data-target="#inventory_databases" id="inventory_databases_history">
+		  <input type="radio"  ><span class="trad">Database</span></input>
+		</label>
+		<label class="btn btn-default" data-target="#inventory_licences" id="licence_history">
+		  <input type="radio"  ><span class="trad">Licence</span></input>
+		</label>
+		<label class="btn btn-default" data-target="#inventory_server_licences" id="inventory_servers_licences_history">
+		  <input type="radio"  ><span class="trad">Server Licence</span></input>
+		</label>
+	</div>
+
+	<!-- filtre des resultats-->		
+	<label id="inventory_toggle_filter" class="toggle_filter checkbox-inline fa fa-filter fa-2x" 
+			data-toggle="tooltip" title="Only change">
+			  <input   type="checkbox" value=""/></label>
+
+ 
+	<!-- liste des serveurs-->			
+	  <table id="inventory_servers" searchbox class="inventory_table" header="Detail" bottom="0" right="0">
+		<thead>
+		  <tr>
+			<th width="40px" no_edit><div class="action"></div></th>
+			<th >vcenter</th>
+			<th >vcluster</th>
+			<th >vsphere_version</th>
+			<th width="150px">physical_srv_name</th>
+			<th>cpu_model</th>
+			<th width="100px">nb_cpu</th>
+			<th width="100px">nb_core_by_cpu</th>
+			<th width="100px">nb_core</th>
+			<th width="100px">nb_logical_core</th>
+			<th width="100px">core_factor</th>
+		 
+		  </tr>
+		</thead>
+
+	  </table>
+   
+		<!-- liste des bases-->		
+	  <table  id="inventory_databases" searchbox  class="inventory_table" header="Detail" bottom="0"  right="0">
+		<thead>
+		  <tr>
+			<th width="40px" no_edit><div class="action"></div></th>
+			<th width="150px">physical_srv_name</th>
+			<th width="150px">virtual_srv_name</th>
+			<th>is_physical</th>
+			<th>db_name</th>
+			<th>db_version</th>
+			<th>db_edition</th>
+			<th>db_env</th>
+			<th>os</th>
+		  </tr>
+		</thead>
+
+	  </table>
+	
+	<!-- liste des licences-->		
+	  <table  id="inventory_licences" searchbox  class="inventory_table" header="Detail" bottom="0"  right="0">
+		<thead>
+		  <tr>
+			<th width="40px" no_edit><div class="action"></div></th>
+			<th width="150px">csi</th>
+			<th width="350px" >product</th>
+			<th width="250px">metric</th>
+			<th width="100px">nb</th>
+			<th no_edit>Used</th>
+		  </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	  </table>
+	
+	<!-- liste des licences par serveur-->		
+	  <table id="inventory_server_licences" searchbox  class="inventory_table" header="Detail" bottom="0"  right="0">
+		<thead>
+		  <tr>
+			<th width="40px" no_edit><div class="action"></div></th>
+			<th width="150px" >server</th>
+			<th width="150px" >csi</th>
+			<th width="350px" >product</th>
+			<th width="250px">metric</th>
+			<th >nb</th>
+		  </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	  </table>
+	
+
+</div>
+</div>
+
+<div id="inventory_edit_button" class="input-group ">            
+
+	
+  
+	<a id="inventory_add" class="valid_cancel btn " href="#" data-toggle="tooltip"
+			title="Add"><i class="fa fa-fw fa-plus fa-2x"></i><span class="trad">Add</span>
+	 </a>
+	<a id="inventory_remove"  class="edit inactive  valid_cancel btn" href="#" data-toggle="tooltip"
+			title="Remove"><i class="fa fa-fw fa-minus fa-2x"></i><span  class="trad">Remove</span>
+	 </a>
+	<a id="inventory_modify"  class="edit inactive btn" href="#" data-toggle="tooltip"
+			title="Modify"><i class="fa fa-fw fa-pencil fa-2x"></i><span  class="trad">Modify</span>
+	 </a>
+  </div>
+  
+  <div id="inventory_edit_validate_button" class="input-group ">            
+
+	
+  
+	<a id="inventory_edit_validate" class="valid_cancel btn" href="#" data-toggle="tooltip"
+			title="Validate"><i class="fa fa-fw fa-check fa-2x"></i><span class="trad">Validate</span>
+	 </a>
+	<a id="inventory_edit_cancel"  class="valid_cancel btn" href="#" data-toggle="tooltip"
+			title="Cancel"><i class="fa fa-fw fa-ban fa-2x"></i><span  class="trad">Cancel</span>
+	 </a>
+	
+  </div>
+
+ 

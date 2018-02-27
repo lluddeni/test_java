@@ -1,0 +1,7 @@
+2018-02-15T16:16:23.868
+ERROR:
+psql:C:/dev_setra/licence_conformity/temp/create_database.sql:6: ERREUR:  la base de données « licence_conformity » existe déjà
+psql:C:/dev_setra/licence_conformity/temp/create_database.sql:9: ERREUR:  l'extension « tablefunc » existe déjà
+
+RESULT:
+Vous �tes maintenant connect� � la base de donn�es � licence_conformity � en tant qu'utilisateur � postgres �.

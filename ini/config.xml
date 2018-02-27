@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<config>
+    <connexion_string><![CDATA[jdbc:postgresql://localhost/licence_conformity?user=postgres&password=Setra12dba!]]></connexion_string>
+    <http_server_port>8080</http_server_port>
+    <client></client>
+    <psql_path>C:\Program Files\PostgreSQL\10\bin</psql_path>
+    <pgpass_path>C:\Users\luc.luddeni\AppData\Roaming\postgresql</pgpass_path>
+    <oracle_user>sys</oracle_user>
+    <oracle_password>oracle4U</oracle_password>
+    <login_timeout>60</login_timeout>
+    <audit_time>20:00</audit_time>
+</config>
+

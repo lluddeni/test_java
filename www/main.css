@@ -1,0 +1,392 @@
+html 
+{ 
+font-family:Helvetica, Arial, sans-serif; 
+-webkit-text-size-adjust:100%; 
+background-color:black;
+transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
+height:100%;
+width:100%;
+ box-sizing:border-box;
+overflow:hidden;
+-webkit-user-select: none;
+-webkit-touch-callout: none;
+user-select: none;
+-ms-user-select: none;
+  background-color:#f9f9f9;
+}
+
+
+
+body{
+  min-width:1600px!important;
+  display:none;
+ 
+ 
+  }
+pre
+{
+  margin-bottom:0;
+}
+
+#tooltip
+{
+  position:absolute;
+  left:100px;
+  top:100px;
+ 
+  z-index:2000;
+ 
+  pointer-events:none;
+  display:none;
+ 
+}
+#tooltip span
+{
+   position:absolute;
+   background-color:black;
+   border-radius:5px;
+   color:white;
+  white-space:nowrap;
+  padding:5px;
+ 
+}
+.tooltip_arrow
+{
+    position:absolute;
+   
+    WIDTH:0;
+	HEIGHT:0;
+	BORDER:10PX SOLID transparent;	
+}
+#tooltip_arrow_up
+{
+ 
+   border-bottom-color:black;
+}
+
+#tooltip_arrow_down
+{
+
+  border-top-color:black;
+}
+.content-wrapper
+{
+  position:absolute;
+  left:0;
+  padding-top:60px;
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  
+}
+
+.navbar-brand
+{
+  padding-right: 50px;
+}
+
+.modal 
+{
+  background-color:#00000054;
+}
+
+.modal-content label
+{
+   text-align:right;
+   padding-right:10px!important;
+}
+
+.modal-content
+{
+  width:600px!important;
+}
+.modal-content .row
+{
+  margin:0;
+  padding-bottom:20px;
+  align:text-center
+}
+
+.modal-content input 
+{
+  padding-left:3px!important;
+}
+
+.selected
+{
+  background-color: lightblue !important;
+}
+
+.btn-group .active 
+{ 
+  background-color: lightgray ; 
+  color: black; 
+}
+
+.dialog_item
+{
+  display:none;
+}
+.row
+{
+  padding-top:10px; 
+}
+
+[class*="col"]
+{
+  margin:0!important;
+  padding:0!important;
+}
+.btn
+{ 
+ border: solid 1px gray;
+ padding:5px!important;
+
+ }
+
+#_target
+{
+  position:absolute;
+  left:500px;
+  display:none;
+}
+
+thead
+{
+  background-color:dodgerblue;
+  color:white;
+ 
+}
+thead th
+{
+  font-weight: 200!important;
+
+}
+
+
+.import_file
+{
+margin-top:5px;
+}
+
+.valid_cancel
+{
+  margin-right:10px!important;
+ 
+}
+
+
+
+input[type*="checkbox"]
+{
+  margin-left:5px;
+  transform:scale(1.5);
+ 
+}
+
+
+input[type*="radio"]
+{
+  margin-left:5px;
+  transform:scale(1.5);
+ 
+}
+
+.nav-active
+{
+  border-bottom: solid 3px dodgerblue;
+  color:white;
+ 
+}
+
+
+.inactive {
+   pointer-events: none;
+   cursor: default;
+   opacity:0.4;
+}
+
+
+#title_icon
+{
+  position:absolute;
+  height:59px;
+  left:0px;
+  top:0px;
+  z-index:-1;
+}
+#main_version
+{
+
+  line-height:20px;
+  margin:0!important;
+  padding-top:0!important;
+  padding-left:110px!important;
+  height:40px;
+  font-weight:bold;
+  text-align:center;
+
+}
+#panel_title
+{
+  position:absolute;
+  top:15px;
+  color:white;
+}
+
+.panel
+{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  visibility:hidden;
+  display:none;
+}
+
+.content-wrapper
+{
+  margin:0;
+  
+}
+
+
+.toggle_filter
+{
+  position:absolute;
+  top:10px;
+  left:130px;
+  z-index:10;
+}
+.fa-filter
+{
+ color:black;
+ width:60px;
+font-size: 25px; 
+height:0px!important;
+}
+
+
+div.action
+{
+  width:30px;
+ 
+}
+.missing
+{
+  color:red;
+}
+.present
+{
+  color:green;
+}
+
+span.action span
+{
+  display:none;
+}
+
+
+.input-group
+{
+width:220px;
+padding-right:10px;
+height:50px;
+float:left;
+}
+
+#content_panel
+{
+  position:absolute;
+  top:60px;
+  width:100%;
+  padding:20px;
+ 
+}
+
+.container-fluid
+{
+  padding-top:10px;
+}
+
+.modal_close
+{
+  position:absolute;
+  right:3px;
+  top:1px;
+   color:lightgray;
+}
+.modal_close:hover
+{
+  color:white;
+}
+
+.modal_title
+{
+   position:absolute;  
+   top:0px;
+   color:white;
+   background-color:dodgerblue;
+   width:100%;
+   font-size:20px;
+   height:33px;
+   border-radius:4px 4px 0 0;
+}
+
+#menu
+{
+  height:59px;
+}
+
+/***************************************/
+/*              login                  */
+/***************************************/
+
+#logins_modal .modal-content
+{
+  padding:20px;
+  margin-top:200px;
+ 
+}
+
+#logins_modal .input-group
+{
+  margin-bottom:20px;
+}
+#login_connect
+{
+  width:200px;
+  margin:auto;
+}
+/***************************************/
+/*              maininfo               */
+/***************************************/
+#main_info .modal-content
+{   
+  margin-top: 200px;
+  min-height:200px;
+  padding-top:30px;
+  font-size:20px;
+}
+
+
+#main_info_text
+{
+  text-align: center;
+  width:80%;
+  margin:auto;
+}
+#main_info_ok
+{
+  margin:auto;
+  width:100px; 
+  display:none;
+}
+
+#main_wait
+{
+ 
+  margin:auto;
+}

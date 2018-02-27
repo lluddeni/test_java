@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+<doc>
+<![CDATA[[
+	{"title":"Introduction"},
+	[
+		{"title":"Périmètre de l'intervention"},
+			{"comment":	{"id":"5"}},
+		{"title":"Contacts"},			
+			{"comment":	{"id":"6"}}
+	],
+	{"title":"Inventaire"},
+	[		
+		{"title":"Serveurs physiques"},				
+		[
+			{"title":"Liste des serveurs"},			
+				{"board":"server_list"} 			
+		]				
+		,
+		{"title":"Bases de données"},		
+		[
+			{"title":"Liste des bases de données"},			
+				{"board":"database_list"} 
+			,
+			{"title":"Usage des options soumises à licence"},
+			[
+				{"title":"Options identifiées"},				
+					{"comment":	{"id":"1"}},
+					{"board":"functionaly_control"} 
+				,
+				{"title":"Cas de « HeapCompression »"},
+					{"comment":	{"id":"7"}},
+					{"board":"heap_compression"} 
+				,
+				{"title":"Cas de « Oracle Utility Datapump (Export) »"},
+					{"board":"datapump_compression"} ,
+				{"title":"Autres cas d’usage du pack « Advanced compression »"},
+					{"comment":	{"id":"8"}},
+				{"title":"Contrôle des packs de management "},				
+					{"comment":{"id":"2"}},
+					{"board":"pack_control"} 
+				,
+				{"title":"Synthèse des packs utilisé"},
+				[
+					{"comment":	{"id":"9"}},
+					{"board":"pack_synthese"},
+					{"board":"pack_by_database"} 
+				],
+				{"title":"Serveurs physiques concernés"},
+				[
+					{"board":"pack_by_server"},
+					{"board":"pack_by_server_grid"} 
+				]
+				
+			]
+		],
+		{"title":"Etat des CPUs"},
+			{"comment":{"id":"3"}},
+			{"board":"cpu_count"}		
+			
+		
+	],
+	{"title":"Licences nécessaires"},
+	[
+		{"title":"Règles de calcul"},
+		[
+			{"title":"Environnements à licencier"},
+			{"comment":{"id":"4"}},
+			{"title":"Éditions"},
+				{"comment":	{"id":"10"}},
+			{"title":"Core Factor"},
+				{"comment":	{"id":"11"}},
+			{"title":"Virtualisation"},
+			[
+				{"title":"Règles générales sur la virtualisation"},
+					{"comment":	{"id":"12"}},
+				{"title":"Cas particulier des versions vphere >= 5.1"},
+					{"comment":	{"id":"13"}},
+				{"title":"Cas particulier des versions vphere >= 6"},
+					{"comment":	{"id":"14"}}
+			],
+			{"title":"Rappels sur les éditions Oracle SE1 et SE2"},
+				{"comment":	{"id":"15"}},			
+				{"board":"oracle_edition"},
+				{"comment":	{"id":"16"}}
+			
+		],
+		{"title":"Usages"},		
+			{"board":"usages"} ,
+			{"comment":	{"id":"17"}},
+			{"board":"synthese_licence"} ,
+			{"board":"total_synthese_licence"} 				
+	]
+	,
+	{"title":"Contrat de licence"},
+	[
+		{"title":"Actifs possédés"},	
+			{"comment":	{"id":"20"}},		
+			{"board":"licence_count"} 
+		,
+		{"title":"Synthèse"},		
+			{"comment":	{"id":"18"}},
+			{"board":"licence_server_count"} 					
+	],
+	{"title":"État des écarts et recommandations"},
+	[
+		{"title":"Ecarts actuels"},
+		[
+			{"comment":	{"id":"19"}},
+			{"board":"server_licence_need_found"} 
+		]	
+	]
+]
+
+]]>
+	
+</doc>
+
+
+<xml_comments>
+	<entry>
+		<key>5</key>
+		<value><![CDATA[L’objectif est de réaliser une revue des usages d’options suite aux actions correctives réalisées par les équipes de GSF à l’issue de l’audit licence réalisé en août 2017.
+
+Il ne s’agit pas ici d’un audit complet : seul le contrôle des usages d’options Oracle est réalisé.]]></value>
+	</entry>
+	<entry>
+		<key>1</key>
+		<value><![CDATA[On met ici en évidence les fonctionnalités associées à des packs soumis à licence qui ont été marquées comme utilisées sur les bases auditées.	]]></value>
+	</entry>
+	<entry>
+		<key>2</key>
+		<value><![CDATA[La désactivation des fonctionnalités liés aux Diagnostic et Tuning Packs est possible à partir de la version Oracle 11g en positionnant le paramètre CONTROL_MANAGEMENT_PACK_ACCESS à NONE sur les bases de données.]]></value>
+	</entry>
+	<entry>
+		<key>7</key>
+		<value><![CDATA[Comme décrit dans la note « DBA_FEATURE_USAGE_STATISTICS Wrongly Reports 'Advanced Compression' Usage Via 'Heap Compression' (Doc ID 2049848.1)  », il est possible d’avoir de faux positifs sur cette feature en raison de son utilisation sur des objets internes à Oracle (pour lequel le pack « Advanced Compression » n’est pas nécessaire. ]]></value>
+	</entry>
+	<entry>
+		<key>8</key>
+		<value><![CDATA[]]></value>
+	</entry>
+	<entry>
+		<key>9</key>
+		<value><![CDATA[On ne tient plus compte à partir d’ici des faux-positifs]]></value>
+	</entry>
+	<entry>
+		<key>3</key>
+		<value><![CDATA[Les nouveaux scripts de LMS collectent l’historique des CPUs utilisés.
+		
+		Nous notons que le nombre de CPUs associés à certaines bases a évolué au fil du temps avec un nombre parfois important.
+		
+		Nous n’avons pas de retour d’expérience sur l’usage fait de ces métriques dans le cadre d’un audit mais il serait théoriquement possible de devoir justifier ces changements et la conformité associée. 
+		Cela demanderait de disposer de l’historique de l’ensemble des évolutions pour justifier que le parc était conforme à chaque instant. ]]></value>
+	</entry>
+	<entry>
+		<key>4</key>
+		<value><![CDATA[ Tous les environnements où les programmes Oracle sont installés et/ou fonctionnent doivent être sous licence :
+
+    •  développement, test, qualification, etc.
+    •  production
+    •  standbys et miroir
+	]]></value>
+	</entry>
+	<entry>
+		<key>10</key>
+		<value><![CDATA[ En <b>Standard Edition</b>, le nombre de licences Oracle nécessaires dépend du nombre de sockets (emplacement CPU) occupés sur les serveurs hébergeant des bases Oracle.
+		
+		Le nombre de licences nécessaires en <b>Enterprise Edition</b> dépend du nombre de cœurs total utilisés sur des serveurs hébergeant des bases Oracle ainsi que du « Core Factor » défini par Oracle suivant le matériel utilisé.]]></value>
+	</entry>
+	<entry>
+		<key>11</key>
+		<value><![CDATA[Le « Core Factor » utilisé pour les serveurs de type Intel x86 est de 0,5.
+		
+		Le tableau http://www.oracle.com/us/corporate/contracts/processor-core-factor-table-070634.pdf détaille les différents « Core Factor ». ]]></value>
+	</entry>
+	<entry>
+		<key>12</key>
+		<value><![CDATA[Dans un environnement virtualisé , Oracle ne reconnait pas l’attribution des vCPU aux machines virtuelles comme méthode fiable de limitation du nombre de CPU à licencier.
+
+De fait, au niveau des licences Oracle il est nécessaire de décompter tous les CPUs et tous les cœurs de tous les serveurs sur lesquels une machine virtuelle sur laquelle Oracle est installé pourrait éventuellement s’exécuter.
+
+Ainsi, pour une configuration VCenter de 3 serveurs physiques, et même s’il n’y a qu’une seule VM Oracle hébergée, ce sont l’ensemble des serveurs physiques qu’il faudrait  licencier.
+
+Pour limiter l’impact de cette règle, on regroupe généralement les serveurs physiques hébergeant des VM Oracle sur des clusters distincts à l’intérieur d’une même configuration vCenter, le transfert d’une VM à chaud d’un cluster à un autre ne pouvant pas être effectué.
+
+Cependant, les nouvelles fonctionnalités ajoutées par VMware à partir de la version vSphere 5.1 puis  version 6 compliquent la situation et le respect des règles de licensing Oracle.  ]]></value>
+	</entry>
+	<entry>
+		<key>13</key>
+		<value><![CDATA[À compter de la version Vmware 5 .1 il devient possible de déplacer à chaud une VM d’un cluster à un autre à l’intérieur d’un même vCenter, ce qui, du fait des règles de gestion des licences Oracle (http://www.oracle.com/us/corporate/pricing/partitioning-070609.pdf) obligerait à acquérir des licences pour tous les serveurs physiques de la configuration vCenter.
+
+Pour limiter cet impact, il est recommandé : 
+
+    •  d’isoler les machines virtuelles « Oracle » sur une instance vCenter dédiée
+    •  d’isoler au niveau du stockage les datastores utilisés par Oracle.
+	
+En théorie le service de gestion des licences d‘Oracle (LMS) demande aux clients d’utiliser un SAN dédié pour le stockage utilisé par Oracle. 
+
+En pratique des solutions moins contraignantes peuvent être acceptées par LMS : on peut par exemple imaginer limiter l’accès aux LUNs Oracle via des règles de zoning spécifiques sur le SAN.
+
+<b>Attention cependant : seul LMS est en capacité de valider une telle configuration, après avoir évalué les mécanismes mis en œuvre pour isoler le stockage.</b>
+
+]]></value>
+	</entry>
+	<entry>
+		<key>14</key>
+		<value><![CDATA[À part en édition standard, il est possible de basculer entre deux vCenter ce qui impliquerait de licencier l’ensemble de l’infrastructure.
+
+Dans cette configuration, l’isolation sur un vCenter dédié n’est plus possible ce qui augmente d’autant plus le risque de non-conformité.
+
+]]></value>
+	</entry>
+	<entry>
+		<key>15</key>
+		<value><![CDATA[Depuis janvier 2016 les éditions Oracle database « Standard Edition » et « Standard Edition One » ne figurent plus au catalogue Oracle, elles ont été remplacées par l’édition « Standard edition 2 ».
+
+Les différences entre ces éditions sont récapitulées dans le tableau ci-dessous : ]]></value>
+	</entry>
+	<entry>
+		<key>16</key>
+		<value><![CDATA[<b>Remarque :</b> vous pouvez demander à Oracle la conversion de vos licences SE1 en licences SE2 (la conversion est gratuite mais le coût du support est alors plus élevé)]]></value>
+	</entry>
+	<entry>
+		<key>17</key>
+		<value><![CDATA[Voici une synthèse des licences (NUP / Processor) nécessaires :]]></value>
+	</entry>
+	<entry>
+		<key>18</key>
+		<value><![CDATA[Synthétiquement, voici les licences possédées :]]></value>
+	</entry>
+	
+</xml_comments>
+
+<before>
+	<sql><![CDATA[
+		truncate table public.servers_licences_need;
+		with feat as
+		(
+			select * from public.feature 
+			where feature not like '%Datapump%' and feature not like '%HeapCompression%'
+			union
+			select fe.* from public.feature fe
+			left join public.datapump_compression dp 
+				   on dp.virtual_srv_name=fe.virtual_srv_name
+				   and dp.db_name=fe.db_name
+			where feature like '%Datapump%' and dp.detected_usage is not null
+			union
+			select fe.* from public.feature fe
+			left join public.heap_compression hc 
+				   on hc.virtual_srv_name=fe.virtual_srv_name
+				   and hc.db_name=fe.db_name
+			where feature like '%HeapCompression%' and hc.owner not in('SYSMAN')
+		)
+		insert into public.servers_licences_need 
+		(
+		SELECT physical_srv_name
+			,edition_need
+			,edition_found
+			,CASE 
+				WHEN edition_need='EE' THEN licence_nup_ee 
+				WHEN edition_need='SE' THEN licence_nup_se 
+				ELSE 0 END as LicenceNUP
+			 ,CASE 
+				WHEN edition_need='EE' THEN licence_proc_ee 
+				WHEN edition_need='SE' THEN licence_proc_se 
+				ELSE 0 END as LicenceProc
+			,CASE 
+				WHEN edition_need='EE' AND ADG>0 THEN licence_nup_ee 
+				WHEN edition_need='SE' AND ADG>0 THEN licence_nup_se 
+				ELSE 0 END as ActiveDataGuardNUP
+			 ,CASE 
+				WHEN edition_need='EE' AND ADG>0 THEN licence_proc_ee
+				WHEN edition_need='SE' AND ADG>0 THEN licence_proc_se
+				ELSE 0 END as ActiveDataGuardProc
+			,CASE 
+				WHEN edition_need='EE' AND AC>0 THEN licence_nup_ee 
+				WHEN edition_need='SE' AND AC>0 THEN licence_nup_se 
+				ELSE 0 END as AdvancedCompressionNUP
+			,CASE 
+				WHEN edition_need='EE' AND AC>0 THEN licence_proc_ee
+				WHEN edition_need='SE' AND AC>0 THEN licence_proc_se
+				ELSE 0 END as AdvancedCompressionProc       
+			,CASE 
+				WHEN edition_need='EE' AND DP>0 THEN licence_nup_ee
+				WHEN edition_need='SE' AND DP>0 THEN licence_nup_se
+				ELSE 0 END as DiagnosticPackNUP
+			,CASE 
+				WHEN edition_need='EE' AND DP>0 THEN licence_proc_ee
+				WHEN edition_need='SE' AND DP>0 THEN licence_proc_se
+				ELSE 0 END as DiagnosticPackProc
+			
+			,CASE 
+				WHEN edition_need='EE' AND P>0 THEN licence_nup_ee 
+				WHEN edition_need='SE' AND P>0 THEN licence_nup_se
+				ELSE 0 END as PartitioningNUP
+			,CASE 
+				WHEN edition_need='EE' AND P>0 THEN licence_proc_ee
+				WHEN edition_need='SE' AND P>0 THEN licence_proc_se
+				ELSE 0 END as PartitioningProc
+			,CASE 
+				WHEN edition_need='EE' AND TP>0 THEN licence_nup_ee
+				WHEN edition_need='SE' AND TP>0 THEN licence_nup_se
+				ELSE 0 END as TuningPackNUP
+			  ,CASE 
+				WHEN edition_need='EE' AND TP>0 THEN licence_proc_ee
+				WHEN edition_need='SE' AND TP>0 THEN licence_proc_se
+				ELSE 0 END as TuningPackProc
+		FROM
+		(
+		SELECT physical_srv_name
+			,CASE WHEN pack like '%Diag%' OR pack like '%Tun%' 
+				THEN 'EE'
+				ELSE edition  END as edition_need
+			, edition as edition_found
+			,ceil(ceil(nb_core) * core_factor) * 25 as licence_nup_ee
+			,ceil(ceil(nb_core) * core_factor) as licence_proc_ee
+			,CASE 
+			WHEN ceil(nb_cpu) <=2 THEN 10 
+			WHEN ceil(nb_cpu) <=4 THEN 5 ELSE 0 END as licence_nup_se      
+			 ,CASE 
+			WHEN ceil(nb_cpu) <=2 THEN  ceil(nb_cpu)
+			WHEN ceil(nb_cpu) <=4 THEN  ceil(nb_cpu) ELSE 0 END as licence_proc_se          
+			,CASE WHEN pack like '%Acti%' 
+			THEN 1 
+			ELSE 0
+			END AS ADG
+			, CASE WHEN pack like '%Adv%' 
+			THEN 1 
+			ELSE 0 
+			END AS AC
+			 , CASE WHEN pack like '%Diag%' or pack like '%Tun%' 
+			THEN 1 
+			ELSE 0
+			END AS DP
+			,CASE WHEN pack like '%Part%' 
+			THEN 1
+			ELSE 0 
+			END AS P
+			 ,CASE WHEN pack like '%Tun%' 
+			THEN 1
+			ELSE 0
+			END AS TP
+		FROM
+		(
+		SELECT 
+				s.physical_srv_name  
+				,nb_core
+				,nb_cpu
+				,core_factor
+				, string_agg(DISTINCT
+						CASE WHEN release LIKE '%Enterprise%' THEN 'EE'  
+							 WHEN release LIKE '%Express%'    THEN 'XE' 
+							 WHEN release IS NULL THEN '?'
+							 ELSE 'SE'
+						END, ', ')                AS edition
+				,string_agg(distinct(p.pack),',') AS pack
+		FROM public.inventory_servers s         
+		LEFT JOIN public.inventory_databases d
+			   ON d.physical_srv_name = s.physical_srv_name
+		LEFT JOIN public.release r
+			   ON  trim(upper(substring(d.virtual_srv_name from '[^.]*'))) = trim(upper(substring(r.virtual_srv_name from '[^.]*')))
+			   AND trim(upper(d.db_name)) = trim(upper(r.db_name))
+		LEFT JOIN feat f
+			   ON f.virtual_srv_name=d.virtual_srv_name 
+			   AND f.db_name=d.db_name
+		LEFT JOIN public.feature_pack p
+			   ON p.feature = f.feature
+		GROUP BY     
+				 s.physical_srv_name	
+				,nb_core
+				,nb_cpu
+				,core_factor				
+		ORDER BY 
+			s.physical_srv_name
+		) as t
+		) as t
+		);]]>
+	</sql>
+</before>
+
+<board name="oracle_edition">
+	<desc><![CDATA[Edition oracle]]></desc>	
+	<header></header>
+	<header>Standard Edition 1</header>
+	<header>Standard Edition</header>
+	<header>Standard Edition 2</header>
+	<header>Entreprise Edition</header>
+	<row>
+		<cell><![CDATA[Eligibilité]]></cell>
+		<cell><![CDATA[serveur 2 sockets]]></cell>
+		<cell><![CDATA[serveur 4 sockets]]></cell>
+		<cell><![CDATA[serveur 2 sockets ET nb CPU-threads <= 16 limité par le kernel ORACLE]]></cell>
+		<cell><![CDATA[Pas de limitation]]></cell>
+	</row>
+	<row>
+		<cell><![CDATA[Minima (NUP)]]></cell>
+		<cell><![CDATA[5 / serveur]]></cell>
+		<cell><![CDATA[5 / serveur]]></cell>
+		<cell><![CDATA[10 / serveur]]></cell>
+		<cell><![CDATA[25 / lic. Proc]]></cell>
+	</row>
+	<row>
+		<cell><![CDATA[Real Application Clusters]]></cell>
+		<cell><![CDATA[non]]></cell>
+		<cell><![CDATA[oui]]></cell>
+		<cell><![CDATA[oui]]></cell>
+		<cell><![CDATA[oui]]></cell>
+	</row>
+	<row>
+		<cell><![CDATA[Multitenant]]></cell>
+		<cell><![CDATA[non]]></cell>
+		<cell><![CDATA[non]]></cell>
+		<cell><![CDATA[non]]></cell>
+		<cell><![CDATA[oui]]></cell>
+	</row>
+	<row>
+		<cell><![CDATA[Date début commercialisation]]></cell>
+		<cell><![CDATA[]]></cell>
+		<cell><![CDATA[]]></cell>
+		<cell><![CDATA[01/09/2015]]></cell>
+		<cell><![CDATA[]]></cell>
+	</row>
+	<row>
+		<cell><![CDATA[Date fin commercialisation]]></cell>
+		<cell><![CDATA[31/12/2015]]></cell>
+		<cell><![CDATA[31/12/2015]]></cell>
+		<cell><![CDATA[]]></cell>
+		<cell><![CDATA[]]></cell>
+	</row>
+ </board>
+<board name="server_list">
+	<desc><![CDATA[Liste des serveurs]]></desc>	
+	<key>vCenter</key>
+	<key>Cluster VMware</key>
+	<key>Physical server name</key>
+	
+	<sql><![CDATA[		
+		SELECT	vcenter 			 	AS "vCenter"
+			 , vcluster      			AS "Cluster VMware"     
+			 , vsphere_version     		AS "vSphere version"  
+			 , physical_srv_name 		AS "Physical server name"
+			 , cpu_model         		AS "CPU model"     
+			 , ceil(nb_cpu)             AS "#cpu"   
+			 , nb_core_by_cpu    		AS "#core / cpu"  
+			 , ceil(nb_core)            AS "#core"   
+			 , core_factor  			AS "Core factor"
+			 , CASE WHEN ceil(nb_cpu) <= 2
+						THEN 'All editions'
+					WHEN ceil(nb_cpu) <= 4 THEN 
+						'EE and SE only (not SE1 nor SE2)'
+					ELSE 
+						'EE only'
+			   END AS "Edition eligibility"         	 
+			 FROM public.inventory_servers 
+			 ORDER BY 
+				vcenter
+			   , vcluster
+			   , physical_srv_name;
+		]]>
+	</sql>
+</board>
+
+
+<board name="database_list">
+	<desc><![CDATA[Liste des bases de données]]></desc>	
+	<key>Virtual server name</key>	
+	<key>Database name</key>	
+	<sql><![CDATA[
+		SELECT d.virtual_srv_name       AS "Virtual server name"
+			 , d.db_name                AS "Database name"
+			 --, release                AS "Release"
+			 , CASE WHEN release is null THEN 'Unknown - check data consistency'
+					WHEN release LIKE '%Enterprise%' THEN 'Enterprise'  
+					WHEN release LIKE '%Express%'    THEN 'Express' 
+					ELSE 'Standard'
+			   END AS "Edition"
+			 , SUBSTRING(release FROM '\d+\.\d\.\d\.\d') AS "Version"
+			
+		FROM public.inventory_databases d
+		LEFT JOIN public.release r
+			   ON  trim(upper(substring(d.virtual_srv_name from '[^.]*'))) = trim(upper(substring(r.virtual_srv_name from '[^.]*')))
+			   AND trim(upper(d.db_name)) = trim(upper(r.db_name))
+		ORDER BY physical_srv_name ,d.db_name;
+		]]>
+	</sql>
+</board>
+
+<board name="functionaly_control">
+	<desc><![CDATA[Options identifiées]]></desc>	
+	<key>Virtual server name</key>
+	<key>Database name</key>
+	<key>pack</key>
+	<key>Feature used</key>
+	
+	<sql><![CDATA[	
+		SELECT f.virtual_srv_name       					AS "Virtual server name"
+			 , f.db_name                					AS "Database name"
+			 , p.pack
+			 , f.feature                					AS "Feature used"
+			 , SUM(detected_usage)
+			 , MIN(TO_CHAR(first_usage, 'DD/MM/YYYY') ) 	AS "First usage"
+			 , MAX(TO_CHAR(last_usage, 'DD/MM/YYYY')) 		AS "Last usage"
+			 , DATE_PART('day', NOW() - max(last_usage)) 	AS "Last usage days ago"
+		FROM public.feature f
+		JOIN public.feature_pack p
+		  ON f.feature = p.feature
+		 AND p.pack is not null
+		--WHERE DATE_PART('day', NOW() - last_usage) >= 700
+		GROUP BY f.virtual_srv_name       
+			   , f.db_name               
+			   , p.pack                   
+			   , f.feature	
+		ORDER BY f.virtual_srv_name
+				, f.db_name
+				, p.pack
+				, f.feature
+		;
+		]]>
+	</sql>
+</board>
+
+<board name="heap_compression">
+	<desc><![CDATA[Cas de HeapCompression]]></desc>	
+	<key>Virtual server name</key>
+	<key>Database name</key>
+	
+	<sql><![CDATA[	
+		with hcn as (
+			select count(*) c, virtual_srv_name, db_name from(
+			select distinct(table_name) table_name, virtual_srv_name, db_name 
+			from public.heap_compression 
+			where owner in('SYSMAN')
+			group by virtual_srv_name,db_name,table_name) T group by virtual_srv_name, db_name
+		)
+		,hcp as (
+			select count(*) c, virtual_srv_name, db_name from(
+			select distinct(table_name) table_name, virtual_srv_name, db_name 
+			from public.heap_compression 
+			where owner not in('SYSMAN')
+			group by virtual_srv_name,db_name,table_name) T group by virtual_srv_name, db_name
+		)
+		select T.virtual_srv_name as "Server Name",
+		T.db_name as "Database name",
+		case when hcp.c is not null then
+			'positif sur table ' ||  hcp.c || ' table(s)'
+			when hcn.c is not null then
+			'Faux positif: utilisation sur ' || hcn.c || ' table(s) SYSTEM habituelle(s)'
+			end as "Vérification",
+		T.feature as "Feature used",
+		T.sum as "Sum",
+		T.first_usage as "First Usage",
+		t.last_usage as "Last Usage",
+		T.day_ago as "Last usage days ago"
+		from
+		(SELECT f.virtual_srv_name       				
+			 , f.db_name                				          
+			 , f.feature                					
+			 , SUM(detected_usage) sum
+			 , MIN(TO_CHAR(first_usage, 'DD/MM/YYYY') ) 	first_usage
+			 , MAX(TO_CHAR(last_usage, 'DD/MM/YYYY')) 	last_usage	
+			 , DATE_PART('day', NOW() - max(last_usage)) 	day_ago
+		FROM public.feature f
+		JOIN public.feature_pack p
+		  ON f.feature = p.feature
+		 AND p.pack is not null
+		WHERE f.feature = 'HeapCompression'
+		GROUP BY f.virtual_srv_name       
+			   , f.db_name               
+			   , p.pack                   
+			   , f.feature	
+		ORDER BY f.virtual_srv_name
+				, f.db_name
+				, p.pack
+				, f.feature
+		) T
+		LEFT JOIN hcp on hcp.virtual_srv_name=T.virtual_srv_name and hcp.db_name=T.db_name
+		LEFT JOIN hcn on hcn.virtual_srv_name=T.virtual_srv_name and hcn.db_name=T.db_name
+		;
+		]]>
+	</sql>
+</board>
+
+<board name="datapump_compression">
+	<desc><![CDATA[Cas de Datapump Compression]]></desc>	
+	<key>Virtual server name</key>
+	<key>Database name</key>
+	
+	<sql><![CDATA[	
+		with dp as (
+			select sum(detected_usage) c,virtual_srv_name,db_name
+			from public.datapump_compression   
+			group by virtual_srv_name,db_name
+		)
+		select T.virtual_srv_name as "Server Name",
+		T.db_name as "Database name",
+		case when dp.c is not null then
+			'Pack “Advanced compression” réellement utilisé'
+			else
+			''
+			end as "Vérification",
+		T.feature as "Feature used",
+		T.sum as "Sum",
+		T.first_usage as "First Usage",
+		t.last_usage as "Last Usage",
+		T.day_ago as "Last usage days ago"
+		from
+		(SELECT f.virtual_srv_name       				
+			 , f.db_name                				          
+			 , f.feature                					
+			 , SUM(detected_usage) sum
+			 , MIN(TO_CHAR(first_usage, 'DD/MM/YYYY') ) 	first_usage
+			 , MAX(TO_CHAR(last_usage, 'DD/MM/YYYY')) 	last_usage	
+			 , DATE_PART('day', NOW() - max(last_usage)) 	day_ago
+		FROM public.feature f
+		JOIN public.feature_pack p
+		  ON f.feature = p.feature
+		 AND p.pack is not null
+		WHERE f.feature like '%Datapump%'
+		GROUP BY f.virtual_srv_name       
+			   , f.db_name               
+			   , p.pack                   
+			   , f.feature	
+		ORDER BY f.virtual_srv_name
+				, f.db_name
+				, p.pack
+				, f.feature
+		) T
+		LEFT JOIN dp on dp.virtual_srv_name=T.virtual_srv_name and dp.db_name=T.db_name
+
+	
+		;
+		]]>
+	</sql>
+</board>
+
+<board name="pack_control">
+	<desc><![CDATA[Contrôle des packs de management]]></desc>	
+	<key>Virtual server name</key>
+	<key>Database name</key>
+	
+	<sql><![CDATA[	
+		SELECT 
+			 virtual_srv_name  AS "Virtual server name",
+			 db_name                  AS "Database name",
+			 value                    AS "Control management pack access",  
+			 case when value like '%DIAG%' and diag.product is null then 'No Diagnotic Pack licence - ' else '' end 
+			|| case when value like '%TUN%' and tun.product is null then 'No Tunning Pack licence ' else '' end as "Comment"
+		FROM public.parameters 
+		left join public.inventory_servers_licences diag on diag.physical_srv_name=virtual_srv_name 
+			   and diag.product like '%Diag%' and value like '%DIAG%'
+		left join public.inventory_servers_licences tun on tun.physical_srv_name=virtual_srv_name 
+			   and tun.product like '%Tun%' and value like '%TUN%'      
+		WHERE name = 'control_management_pack_access'
+		ORDER BY virtual_srv_name,db_name
+		;
+		]]>
+	</sql>
+	<check>
+	<![CDATA[
+		insert into public.audit_alert 
+		select 
+		$audit_id,1,
+		'_'||virtual_srv_name||'_'||db_name ||'_',
+		'$board',
+		'Control management pack access',
+		value,
+		expected,
+		comment
+		from
+		(SELECT 
+			 virtual_srv_name ,
+			 db_name          ,
+			 value            ,  
+			 case when value like '%DIAG%' and diag.product is null then 'NONE' else 'DIAGNOSTIC' end 
+			 || case when value like '%TUN%' and tun.product is null then '' else '+TUNNING' end
+				as expected,
+			 case when value like '%DIAG%' and diag.product is null then 'No Diagnotic Pack licence - ' else '' end 
+			|| case when value like '%TUN%' and tun.product is null then 'No Tunning Pack licence ' else '' end as Comment
+		FROM public.parameters 
+		left join public.inventory_servers_licences diag on diag.physical_srv_name=virtual_srv_name 
+			   and diag.product like '%Diag%' and value like '%DIAG%'
+		left join public.inventory_servers_licences tun on tun.physical_srv_name=virtual_srv_name 
+			   and tun.product like '%Tun%' and value like '%TUN%'      
+		WHERE name = 'control_management_pack_access'
+		ORDER BY virtual_srv_name,db_name) T
+		where T.Comment <> ''  
+
+
+	]]>
+	</check>
+</board>
+
+<board name="pack_synthese">
+	<desc><![CDATA[Synthèse des packs utilisés]]></desc>	
+	<key>Virtual server name</key>
+	<key>Database name</key>
+	
+	<sql><![CDATA[	
+		SELECT f.virtual_srv_name           	AS "Virtual server name"
+		 , f.db_name                            AS "Database name"
+		 , string_agg(distinct(p.pack), ', ')   AS "Pack(s)"
+		FROM public.feature f
+		JOIN public.feature_pack p
+		  ON f.feature = p.feature
+		 AND p.pack IS NOT NULL
+		GROUP BY f.db_name
+			   , f.virtual_srv_name
+		ORDER BY f.virtual_srv_name,
+				 f.db_name			    
+		;
+		]]>
+	</sql>
+
+</board>
+
+<board name="pack_by_database">
+	<desc><![CDATA[Synthèse des packs utilisé par databases]]></desc>	
+	<key>Virtual server name</key>
+	<key>Physical server name</key>
+	<key>Database name</key>
+	
+	<sql><![CDATA[	
+		SELECT $s$
+		SELECT * FROM CROSSTAB($$
+			   SELECT DISTINCT f.db_name || ' @ ' || f.virtual_srv_name AS db
+					, f.db_name
+					, f.virtual_srv_name
+					, i.physical_srv_name
+					, p.pack
+					, 'X'
+			   FROM public.feature f
+			   JOIN public.feature_pack p
+				 ON f.feature = p.feature
+				AND p.pack is not null
+			   LEFT JOIN public.inventory_databases i
+				 ON  trim(upper(substring(i.virtual_srv_name from '[^.]*'))) = trim(upper(substring(f.virtual_srv_name from '[^.]*')))
+				AND trim(upper(i.db_name)) = trim(upper(f.db_name))
+			   ORDER BY 1, 2
+			   $$
+			 , $$
+			   SELECT DISTINCT pack
+			   FROM public.feature_pack p
+			   WHERE EXISTS (SELECT 1
+							 FROM public.feature f
+							 WHERE f.feature = p.feature AND p.pack is not null)
+			   ORDER BY pack
+			   $$
+		) AS ct("Entity" varchar(255)
+			  , "Database name" varchar(255)
+			  , "Virtual server name" varchar(255)
+			  , "Physical server name" varchar(255)
+		$s$
+		;
+
+		SELECT DISTINCT '      , "' || pack || '" VARCHAR(255)' AS pack
+		FROM public.feature_pack p
+		WHERE EXISTS (SELECT 1
+					 FROM public.feature f
+					 WHERE f.feature = p.feature AND p.pack is not null)
+		ORDER BY pack
+		;
+
+		SELECT $s$
+		);
+		$s$
+	;]]>
+	</sql>
+	
+	
+</board>	
+
+<board name="pack_by_server">
+	<desc><![CDATA[Serveurs physiques concernés]]></desc>
+	<key>Physical server name</key>	
+	
+	<sql><![CDATA[	
+		SELECT DISTINCT i.physical_srv_name 		 AS "Physical server name"
+              , string_agg(distinct(p.pack), ', ')   AS "Pack(s)"
+		FROM public.feature f
+		JOIN public.feature_pack p
+		 ON f.feature = p.feature
+		AND p.pack is not null
+		LEFT JOIN public.inventory_databases i
+		 ON  trim(upper(substring(i.virtual_srv_name from '[^.]*'))) = trim(upper(substring(f.virtual_srv_name from '[^.]*')))
+		AND trim(upper(i.db_name)) = trim(upper(f.db_name))
+		GROUP BY i.physical_srv_name
+		ORDER BY 1
+;
+		]]>
+	</sql>
+
+</board>
+
+<board name="pack_by_server_grid">
+	<desc><![CDATA[Grille des serveurs physiques concernés]]></desc>
+	<key>Physical server name</key>
+		
+	<sql><![CDATA[			
+			SELECT $s$
+			SELECT * FROM CROSSTAB($$
+					SELECT DISTINCT i.physical_srv_name AS "Physical server name"
+						, p.pack
+						, 'X'
+				   FROM public.inventory_servers s
+				   LEFT JOIN public.inventory_databases i
+					 ON  trim(upper(substring(i.physical_srv_name from '[^.]*'))) = trim(upper(substring(s.physical_srv_name from '[^.]*')))
+				   LEFT JOIN public.feature f
+					 ON  trim(upper(substring(i.virtual_srv_name from '[^.]*'))) = trim(upper(substring(f.virtual_srv_name from '[^.]*')))
+					AND trim(upper(i.db_name)) = trim(upper(f.db_name))
+				   LEFT JOIN public.feature_pack p
+					 ON f.feature = p.feature
+					AND p.pack is not null
+
+				   ORDER BY 1, 2
+				   $$
+				 , $$
+				   SELECT DISTINCT pack
+				   FROM public.feature_pack p
+				   WHERE EXISTS (SELECT 1
+								 FROM public.feature f
+								 WHERE f.feature = p.feature AND p.pack is not null)
+				   ORDER BY pack
+				   $$
+			) AS ct("Physical server name" varchar(255)
+			$s$
+			;
+
+			SELECT DISTINCT '      , "' || pack || '" VARCHAR(255)' AS pack
+			FROM public.feature_pack p
+			WHERE EXISTS (SELECT 1
+						 FROM public.feature f
+						 WHERE f.feature = p.feature AND p.pack is not null)
+			ORDER BY pack
+			;
+
+			SELECT $s$
+			);
+			$s$
+
+		;]]>
+	</sql>
+
+</board>
+
+<board name="usages">
+	<desc><![CDATA[Usages]]></desc>	
+	<key>Physical server name</key>
+	<sql><![CDATA[		
+		
+		SELECT vcenter                                              	AS "Configuration LPAR"
+		 , s.physical_srv_name                                          AS "Physical server name"
+		 , ceil(nb_cpu)                                                 AS "#cpu"
+		 , ceil(nb_core)                                                AS "#core"
+		 , core_factor                                                  AS "Core factor"
+		 , CASE WHEN sn.diagnosticpackproc>0 THEN 'EE only, because DiagPack is used'
+				WHEN ceil(nb_cpu) <= 2 THEN 'All editions'
+				WHEN ceil(nb_cpu) <= 4 THEN 'EE and SE only (not SE1 nor SE2)'
+				ELSE 						'EE only'
+		   END                                                          AS "Edition eligibility"
+		 , CASE WHEN ceil(nb_cpu) <=4 THEN ''||ceil(nb_cpu)
+				ELSE 'N/A'
+		   END                                                          AS "# lic proc SE"
+		 , CASE WHEN ceil(nb_cpu) <=4 THEN ''||5
+				ELSE 'N/A'
+		   END                                                          AS "min NUP SE/SE1"
+		 , CASE WHEN ceil(nb_cpu) <=2 THEN ''||10
+				ELSE 'N/A'
+		   END                                                          AS "min NUP SE2"
+		 ,  ceil(ceil(nb_core) * core_factor)                           AS "# lic proc EE"
+		 , ceil(ceil(nb_core) * core_factor) * 25                       AS "min NUP EE"
+		 , string_agg(DISTINCT
+				CASE WHEN release LIKE '%Enterprise%' THEN 'EE'  
+					 WHEN release LIKE '%Express%'    THEN 'XE' 
+					 WHEN release IS NULL THEN '?'
+					 ELSE 'SE'
+				END, ', ')                                              AS "Editions found"
+		FROM public.inventory_servers s 
+		LEFT JOIN public.inventory_databases d
+			   ON d.physical_srv_name = s.physical_srv_name
+		LEFT JOIN public.release r
+			   ON  trim(upper(substring(d.virtual_srv_name from '[^.]*'))) = trim(upper(substring(r.virtual_srv_name from '[^.]*')))
+			   AND trim(upper(d.db_name)) = trim(upper(r.db_name))
+		LEFT JOIN public.servers_licences_need sn 
+				ON sn.physical_srv_name=s.physical_srv_name
+		GROUP BY vcenter
+			   , vcluster
+			   , s.physical_srv_name
+			   , nb_core
+			   , core_factor
+			   ,sn.diagnosticpackproc
+		ORDER BY vcenter
+			   , vcluster
+			   , s.physical_srv_name
+		;
+		]]>
+	</sql>
+	<check>
+	<![CDATA[	
+		insert into public.audit_alert 
+	SELECT $audit_id,1
+ 		 ,'_' || physical_srv_name || '_'		
+         , '$board' as board
+         , 'Editions found' as target	
+         , Editions as current_value
+         , Eligibility as expected_value
+	     ,case when Editions='?' then 'No edition found'
+			  when edition_need='EE' and T.Editions <>'EE' then 'Need to upgrade Because Diag or Tunning pack used' 
+		      else 	'Need to upgrade edition !' 
+		 end as comment
+		FROM(
+		SELECT    vcenter                                              
+				 , vcluster                                                    
+				 , s.physical_srv_name                                          
+		
+		 ,ceil(nb_cpu) 	as nb_cpu	
+		 , min(distinct
+				CASE WHEN release LIKE '%Enterprise%' THEN 500 -- EE >4cpu  
+					 WHEN release LIKE '%Express%'    THEN 2  -- express <=2cpu
+					 WHEN release IS NULL THEN 0
+					 ELSE 4 --SE SE1 ou SE2 <=4 cpu
+				END)   AS nb_cpu_edition
+          , string_agg(DISTINCT
+				CASE WHEN release LIKE '%Enterprise%' THEN 'EE'  
+					 WHEN release LIKE '%Express%'    THEN 'XE' 
+					 WHEN release IS NULL THEN '?'
+					 ELSE 'SE'
+				END, ', ')  AS Editions
+    	 , CASE WHEN ceil(nb_cpu) <= 2 THEN 'All editions'
+				WHEN ceil(nb_cpu) <= 4 THEN 'EE and SE only (not SE1 nor SE2)'
+				ELSE 						'EE only'
+		   END  AS Eligibility
+		 , n.edition_need as edition_need
+		FROM public.inventory_servers s 
+		LEFT JOIN public.inventory_databases d
+			   ON d.physical_srv_name = s.physical_srv_name
+		LEFT JOIN public.release r
+			   ON  trim(upper(substring(d.virtual_srv_name from '[^.]*'))) = trim(upper(substring(r.virtual_srv_name from '[^.]*')))
+			   AND trim(upper(d.db_name)) = trim(upper(r.db_name))
+		LEFT JOIN public.servers_licences_need n 
+			   ON s.physical_srv_name = n.physical_srv_name	
+		GROUP BY vcenter
+			   , vcluster
+			   , s.physical_srv_name
+			   , nb_core
+			   , core_factor
+			   , n.edition_need
+		ORDER BY vcenter
+			   , vcluster
+			   , s.physical_srv_name
+    		  
+		) AS T
+        
+       WHERE nb_cpu_edition<nb_cpu or editions<>edition_need
+	]]>
+	</check>
+</board>
+
+<board name="synthese_licence">
+	<desc><![CDATA[Synthése des Usages]]></desc>	
+	<key>Physical server name</key>
+	<sql><![CDATA[				
+		SELECT physical_srv_name as "Physical server name"
+			,edition_need
+			,LicenceNUP || ' / ' ||  LicenceProc as "Licence"     
+			,ActiveDataGuardNUP || ' / ' ||  ActiveDataGuardProc as "Active Data Guard"     
+			,AdvancedCompressionNUP || ' / ' ||  AdvancedCompressionProc as "Advanced Compression"     
+			,DiagnosticPackNUP || ' / ' ||  DiagnosticPackProc as "Diagnostic Pack"     
+			,PartitioningNUP || ' / ' ||  PartitioningProc as "Partitioning"     
+			,TuningPackNUP || ' / ' ||  TuningPackProc as "Tuning Pack"     			
+		FROM public.servers_licences_need 
+		WHERE edition_need<>'?';
+		]]>
+	</sql>
+
+</board>
+
+<board name="total_synthese_licence">
+	<desc><![CDATA[Total des licences nécessaires (NUP / Proc)]]></desc>	
+	<key>edition</key>
+	<sql><![CDATA[				
+		SELECT
+		  edition_need		
+		  ,sum(LicenceNUP) || ' / ' ||  sum(LicenceProc) as "Licence"     
+		  ,sum(ActiveDataGuardNUP) || ' / ' ||  sum(ActiveDataGuardProc) as "Active Data Guard"     
+		  ,sum(AdvancedCompressionNUP) || ' / ' ||  sum(AdvancedCompressionProc) as "Advanced Compression"     
+		  ,sum(DiagnosticPackNUP) || ' / ' ||  sum(DiagnosticPackProc) as "Diagnostic Pack"     
+		  ,sum(PartitioningNUP) || ' / ' ||  sum(PartitioningProc) as "Partitioning"     
+		  ,sum(TuningPackNUP) || ' / ' ||  sum(TuningPackProc) as "Tuning Pack"     
+		FROM public.servers_licences_need 
+		WHERE edition_need<>'?'
+		GROUP BY edition_need;
+		]]>
+	</sql>
+
+</board>
+
+<board name="licence_count">
+	<desc><![CDATA[Actifs possédés]]></desc>
+	<key>csi</key>	
+	<key>product</key>		
+	<key>metric</key>		
+	<sql><![CDATA[		
+			with lu as (
+			select csi,product,metric,sum(nb) as used 
+    		from public.inventory_servers_licences			
+			group by csi,product,metric) 	
+			SELECT lp.csi,lp.product,lp.metric,lp.nb ,lu.used
+			FROM public.licence lp	
+			LEFT JOIN lu on lu.csi=lp.csi 
+				 and lu.product=lp.product 
+				 and lp.metric=lu.metric
+		;]]>
+	</sql>
+	<check>
+	<![CDATA[	
+	with lu as (
+			select csi,product,metric,sum(nb) as used 
+    		from public.inventory_servers_licences			
+			group by csi,product,metric) 	
+	insert into public.audit_alert 
+		SELECT $audit_id,1
+				 ,'_' || csi || '_'  || product || '_'  || metric || '_'		
+				 , '$board' as board
+				 , 'used' as target	
+				 , used as current_value
+				 , nb as expected_value
+				 ,'Used greater than max' as comment 
+		from
+		(
+			SELECT lp.csi,lp.product,lp.metric,lp.nb ,lu.used
+			FROM public.licence lp	
+			LEFT JOIN lu on lu.csi=lp.csi and lu.product=lp.product and lp.metric=lu.metric
+			) t where used>nb
+	;]]>
+	</check>
+
+</board>
+
+<board name="product_count">
+	<desc><![CDATA[Actifs possédés par produit]]></desc>
+	
+	<key>product</key>		
+	<key>metric</key>			
+	<sql><![CDATA[						
+			with lu as (select product,metric,sum(nb) as used  
+			 from public.inventory_servers_licences
+			 group by product,metric),
+			lp as (SELECT product,metric,sum(nb) as tot
+						FROM public.licence 
+						GROUP BY product,metric )	
+				SELECT lp.product,lp.metric,lp.tot,lu.used
+				FROM lp
+				LEFT JOIN lu ON lu.product=lp.product AND lp.metric=lu.metric
+				ORDER BY lp.product,lp.metric
+					
+		;]]>
+	</sql>
+	<check>
+	<![CDATA[	
+	with lu as (select product,metric,sum(nb) as used  
+			 from public.inventory_servers_licences
+			 group by product,metric),
+			lp as (SELECT product,metric,sum(nb) as tot
+						FROM public.licence 
+						GROUP BY product,metric )	
+	insert into public.audit_alert 
+		SELECT $audit_id,1
+				 ,'_' || product || '_'  || metric || '_'		
+				 , '$board' as board
+				 , 'used' as target	
+				 , used as current_value
+				 , tot as expected_value
+				 ,'Used greater than max' as comment 
+		from
+		(
+			SELECT lp.product,lp.metric,lp.tot,lu.used
+			FROM lp
+			LEFT JOIN lu ON lu.product=lp.product AND lp.metric=lu.metric
+			ORDER BY lp.product,lp.metric
+			) t where used>tot
+	;]]>
+	</check>
+</board>
+
+<board name="licence_server_count">
+	<desc><![CDATA[Synthèse des actifs possédés par serveur]]></desc>
+			
+	<sql><![CDATA[
+			select physical_srv_name,csi,product,metric,nb 			
+			FROM public.inventory_servers_licences
+			ORDER BY physical_srv_name,csi,product,metric
+		;]]>
+	</sql>
+</board>
+
+<board name="server_licence_need_found">
+	<desc><![CDATA[Synthése des licences necessaires et trouvées, par serveur]]></desc>
+	<key>Physical server name</key>
+	<sql><![CDATA[						
+						
+		with i as (select * from
+			public.inventory_servers_licences
+		 order by physical_srv_name,product,metric),
+
+		t as (select distinct on(physical_srv_name,metric) physical_srv_name,
+			  case when metric like '%Named%'  then 'NUP' else 'Proc' end as metric
+			  from i order by physical_srv_name,metric)
+
+		select n.physical_srv_name as "Physical server name",
+		n.edition_need || ' / ' || n.edition_found as "Edition need / found",
+		t.metric,
+
+		case when t.metric='NUP' then n.licencenup when t.metric is null then 0 else n.licenceproc end || ' / ' ||
+		case when n.edition_need='SE' then
+			case when i1.nb is null then 0 else i1.nb end 
+		else
+			case when i0.nb is null then 0 else i0.nb end
+		end	as "Licence need / found",
+
+		case when t.metric='NUP' then n.activedataguardnup  when t.metric is null then 0 else n.activedataguardproc end || ' / ' ||
+		case when i2.nb is null then 0 else i2.nb end as "Active Data Guard need / found",
+
+		case when t.metric='NUP' then n.advancedcompressionnup  when t.metric is null then 0 else n.advancedcompressionproc end || ' / ' ||
+		case when i3.nb is null then 0 else i3.nb end as "Advanced Compression need / found",
+
+		case when t.metric='NUP' then n.diagnosticpacknup when t.metric is null then 0  else n.diagnosticpackproc end  || ' / ' ||
+		case when i4.nb is null then 0 else i4.nb end as "Diagnostick pack need / found",
+
+		case when t.metric='NUP' then n.partitioningnup when t.metric is null then 0  else n.partitioningproc end  || ' / ' ||
+		case when i5.nb is null then 0 else i5.nb end as "Partitioning need / found",
+
+		case when t.metric='NUP' then n.tuningpacknup when t.metric is null then 0  else n.tuningpackproc end  || ' / ' || 
+		case when i6.nb is null then 0 else i6.nb end as "Tuning Pack need / found"
+
+		from public.servers_licences_need n
+
+		left join t on t.physical_srv_name=n.physical_srv_name
+		left join i as i0 on i0.physical_srv_name=n.physical_srv_name  and i0.product like '%Enter%Edition%' 
+		left join i as i1 on i1.physical_srv_name=n.physical_srv_name  and i1.product like '%Stand%Edition%' 
+		left join i as i2 on i2.physical_srv_name=n.physical_srv_name  and i2.product like '%Active%' 
+		left join i as i3 on i3.physical_srv_name=n.physical_srv_name  and i3.product like '%Adva%' 
+		left join i as i4 on i4.physical_srv_name=n.physical_srv_name  and i4.product like '%Diag%' 
+		left join i as i5 on i5.physical_srv_name=n.physical_srv_name  and i5.product like '%Part%' 
+		left join i as i6 on i6.physical_srv_name=n.physical_srv_name  and i6.product like '%Tun%' 
+			
+		;]]>
+	</sql>
+	<check><![CDATA[
+	
+		with i as 
+		(
+			select *  
+			from public.inventory_servers_licences
+			order by physical_srv_name,product,metric
+		),
+		tp as (select distinct on(physical_srv_name,metric) physical_srv_name,
+			  case when metric like '%Named%'  then 'NUP' else 'Proc' end as metric
+			  from i order by physical_srv_name,metric)		
+		insert into public.audit_alert 
+		select 		
+			$audit_id,1,
+			'_' || n.physical_srv_name || '_',			
+			'$board' as board,	
+			'Edition need / found' as target,
+			n.edition_found as current_value,	
+			n.edition_need as expected_value,
+			case when n.edition_found<>'EE' and n.edition_need='EE' then 'EE need because Diag or tunning pack used' end as comment
+		from public.servers_licences_need n		
+		union
+        select 	
+       		$audit_id,1,
+			'_' || n.physical_srv_name || '_',			
+			'$board' as board,
+			'metric',
+			'' as current_value,	
+			'Nup or Proc' as expected_value	,
+			'Metric missing'
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name      
+        where i.metric is null 	
+			union
+        select 
+			$audit_id,1,
+			'_' || physical_srv_name || '_',			
+			'$board' as board,
+            target,
+            ''||current_value,
+            ''||expected_value,
+			'Value different than expected'
+        from (
+		
+		select 			
+			n.physical_srv_name, 		
+			'Licence need / found' as target,
+			case when n.edition_need='SE' then i1.nb else i0.nb end as current_value,	
+			case when tp.metric='NUP' then n.licencenup when tp.metric is null then 0 else n.licenceproc end as expected_value
+		from public.servers_licences_need n
+		left join tp on tp.physical_srv_name=n.physical_srv_name
+		left join  i i0  on i0.physical_srv_name=n.physical_srv_name  and i0.product like '%Enter%Edition%'   
+        left join  i i1  on i1.physical_srv_name=n.physical_srv_name  and i1.product like '%Stand%Edition%'   
+		
+			union
+		select 
+			n.physical_srv_name	,		
+			'Active Data Guard need / found' as target,
+			i.nb as current_value,	
+			case when i.metric is null then 0 when i.metric like '%Named%' then n.activedataguardnup else  n.activedataguardproc end  as expected_value							
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name  and i.product like '%Active%' 	
+			union
+		select 
+			 n.physical_srv_name ,			
+			'Advanced Compression need / found' as target,
+			i.nb as current_value,	
+			case when i.metric is null then 0 when i.metric like '%Named%' then n.advancedcompressionnup else n.advancedcompressionproc end  as expected_value							
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name  	and i.product like '%Adva%' 
+			union
+		select 
+			n.physical_srv_name ,						
+			'Diagnostick pack need / found' as target,
+			i.nb  as current_value,	
+			case when i.metric is null then 0 when i.metric like '%Named%' then  n.diagnosticpacknup else n.diagnosticpackproc end  as expected_value							
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name  and i.product like '%Diag%' 
+			union
+		select 
+			 n.physical_srv_name ,						
+			'Partitioning need / found' as target,
+			i.nb as current_value,	
+			case when i.metric is null then 0 when i.metric like '%Named%' then  n.partitioningnup else  n.partitioningproc end  as expected_value							
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name  and i.product like '%Part%' 
+			union
+		select 
+			n.physical_srv_name,					
+			'Tuning Pack need / found' as target,
+			i.nb  as current_value,	
+			case when i.metric is null then 0 when i.metric like '%Named%' then n.tuningpacknup else n.tuningpackproc end  as expected_value							
+		from public.servers_licences_need n
+		left join  i  on i.physical_srv_name=n.physical_srv_name  and i.product like '%Tun%') t 
+        where t.expected_value>0 and (t.current_value is null or t.current_value <> t.expected_value)
+		
+		]]>
+	</check>
+</board>
+
+<board name="cpu_count">
+    <desc><![CDATA[Cpu count]]></desc>
+    <key>server_name</key>
+	<key>db_name</key>
+	
+ 	<sql><![CDATA[
+		with t1 as 
+			(select distinct on(server_name,db_name)* 
+			from public.cpu_max
+			order by server_name,db_name,date_snap desc),
+		t3 as
+			(select distinct on(t2.server_name,t2.db_name) t2.* 
+			from public.cpu_max t2,t1
+			where t2.server_name=t1.server_name
+			and t2.db_name=t1.db_name 
+			order by t2.server_name,t2.db_name,t2.numcore  desc)
+		
+		
+		select 
+			t1.server_name,
+			t1.db_name,
+			t1.date_snap 				as "Last Snap",
+			t1.numcore 					as "Last NumCore" ,
+			t3.date_snap 				as "Max Snap",
+			t3.numcore 					as "Max NumCore",
+			case when t3.numcore<>t1.numcore 
+				then 'evolve'
+				else '' 
+				end 					as status
+		from t1
+		left join t3 on t3.server_name=t1.server_name
+					and t3.db_name=t1.db_name ]]>
+	</sql>
+	<check><![CDATA[
+	
+	with t1 as 
+	(	select distinct on(server_name,db_name)* 
+		from public.cpu_max
+		order by server_name,db_name,date_snap desc),
+		t3 as
+		(select max(numcore) max_core, server_name,db_name
+		from public.cpu_max 
+		group by server_name,db_name
+	)     
+	insert into public.audit_alert 	
+	select 
+		$audit_id as audit_id,
+		1 as gravity,
+		'_' || t1.server_name || '_' || t1.db_name || '_' as keys,
+		'$board' as board,
+		'Max NumCore' as targert,
+		t1.numcore || '' as current_value,
+		t3.max_core || '' as expected_value,
+		'Core number has decreased' as comment
+	from t1,t3
+	where 
+		t3.server_name=t1.server_name
+	and t3.db_name=t1.db_name
+	and t1.numcore<t3.max_core
+	
+	]]>
+	</check>
+</board>
+
+</root>

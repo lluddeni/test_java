@@ -1,0 +1,583 @@
+2018-02-20T11:32:23.952
+ERROR:
+
+RESULT:
+-----------------
+ recuperation Control_mgmt : génération du fichier ./audit_control_mgmt.txt 
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_options.csv
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_options.csv
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_options.csv
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_options.csv
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_options.csv
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_options.csv
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_options.csv
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_options.csv
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_options.csv
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_options.csv
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_options.csv
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_options.csv
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_options.csv
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_options.csv
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_options.csv
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_options.csv
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_options.csv
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_options.csv
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_options.csv
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_options.csv
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_options.csv
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_options.csv
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_options.csv
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_options.csv
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_options.csv
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_options.csv
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_options.csv
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_options.csv
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_options.csv
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_options.csv
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_options.csv
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_options.csv
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_options.csv
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_options.csv
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_options.csv
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_options.csv
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_options.csv
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_options.csv
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_options.csv
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_options.csv
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_options.csv
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_options.csv
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_options.csv
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_options.csv
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_options.csv
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_options.csv
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_options.csv
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_options.csv
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_options.csv
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_options.csv
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_options.csv
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_options.csv
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_options.csv
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_options.csv
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_options.csv
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_options.csv
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_options.csv
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_options.csv
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_options.csv
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_options.csv
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_options.csv
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_options.csv
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_options.csv
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_options.csv
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_options.csv
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_options.csv
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_options.csv
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_options.csv
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_options.csv
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_options.csv
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_options.csv
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_options.csv
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_options.csv
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_options.csv
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_options.csv
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_options.csv
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_options.csv
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_options.csv
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_options.csv
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_options.csv
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_options.csv
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_options.csv
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_options.csv
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_options.csv
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_options.csv
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_options.csv
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_options.csv
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_options.csv
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_options.csv
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_options.csv
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_options.csv
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_options.csv
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_options.csv
+-----------------
+ recuperation HWM : génération du fichier ./audit_hwm_sessions.txt 
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_license.csv
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_license.csv
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_license.csv
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_license.csv
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_license.csv
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_license.csv
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_license.csv
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_license.csv
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_license.csv
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_license.csv
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_license.csv
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_license.csv
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_license.csv
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_license.csv
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_license.csv
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_license.csv
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_license.csv
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_license.csv
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_license.csv
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_license.csv
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_license.csv
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_license.csv
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_license.csv
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_license.csv
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_license.csv
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_license.csv
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_license.csv
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_license.csv
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_license.csv
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_license.csv
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_license.csv
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_license.csv
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_license.csv
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_license.csv
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_license.csv
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_license.csv
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_license.csv
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_license.csv
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_license.csv
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_license.csv
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_license.csv
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_license.csv
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_license.csv
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_license.csv
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_license.csv
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_license.csv
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_license.csv
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_license.csv
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_license.csv
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_license.csv
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_license.csv
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_license.csv
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_license.csv
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_license.csv
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_license.csv
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_license.csv
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_license.csv
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_license.csv
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_license.csv
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_license.csv
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_license.csv
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_license.csv
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_license.csv
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_license.csv
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_license.csv
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_license.csv
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_license.csv
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_license.csv
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_license.csv
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_license.csv
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_license.csv
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_license.csv
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_license.csv
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_license.csv
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_license.csv
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_license.csv
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_license.csv
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_license.csv
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_license.csv
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_license.csv
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_license.csv
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_license.csv
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_license.csv
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_license.csv
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_license.csv
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_license.csv
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_license.csv
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_license.csv
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_license.csv
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_license.csv
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_license.csv
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_license.csv
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_license.csv
+-----------------
+ recuperation release : : génération du fichier ./audit_release.txt
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_version.csv
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_version.csv
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_version.csv
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_version.csv
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_version.csv
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_version.csv
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_version.csv
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_version.csv
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_version.csv
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_version.csv
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_version.csv
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_version.csv
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_version.csv
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_version.csv
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_version.csv
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_version.csv
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_version.csv
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_version.csv
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_version.csv
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_version.csv
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_version.csv
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_version.csv
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_version.csv
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_version.csv
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_version.csv
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_version.csv
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_version.csv
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_version.csv
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_version.csv
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_version.csv
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_version.csv
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_version.csv
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_version.csv
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_version.csv
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_version.csv
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_version.csv
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_version.csv
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_version.csv
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_version.csv
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_version.csv
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_version.csv
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_version.csv
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_version.csv
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_version.csv
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_version.csv
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_version.csv
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_version.csv
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_version.csv
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_version.csv
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_version.csv
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_version.csv
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_version.csv
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_version.csv
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_version.csv
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_version.csv
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_version.csv
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_version.csv
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_version.csv
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_version.csv
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_version.csv
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_version.csv
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_version.csv
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_version.csv
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_version.csv
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_version.csv
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_version.csv
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_version.csv
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_version.csv
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_version.csv
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_version.csv
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_version.csv
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_version.csv
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_version.csv
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_version.csv
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_version.csv
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_version.csv
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_version.csv
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_version.csv
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_version.csv
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_version.csv
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_version.csv
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_version.csv
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_version.csv
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_version.csv
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_version.csv
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_version.csv
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_version.csv
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_version.csv
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_version.csv
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_version.csv
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_version.csv
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_version.csv
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_version.csv
+-----------------
+ recuperation feature : : génération du fichier ./audit_feature.txt
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_dba_feature.csv : PSOBAS
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_dba_feature.csv : ESBDEV1
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_dba_feature.csv : ESBREC1
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_dba_feature.csv : ESBTEST1
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_dba_feature.csv : MDMDEV1
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_dba_feature.csv : MDMREC1
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_dba_feature.csv : MDMTEST1
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_dba_feature.csv : PFEDEV
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_dba_feature.csv : PFEINT
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_dba_feature.csv : PFEREC
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_dba_feature.csv : SPOTREC1
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_dba_feature.csv : TIBDP1
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_dba_feature.csv : TIBINT
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_dba_feature.csv : TIBREC
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_dba_feature.csv : PSOBAC
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_dba_feature.csv : PSODEV
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_dba_feature.csv : PSODP1
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_dba_feature.csv : PSOINT
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_dba_feature.csv : PSOIP1
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_dba_feature.csv : PSOREF
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_dba_feature.csv : PSOSBY
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_dba_feature.csv : BIDEV
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_dba_feature.csv : BIDEV2
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_dba_feature.csv : BIDGPS
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_dba_feature.csv : BIDGPSBA
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_dba_feature.csv : BIDGPSCO
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_dba_feature.csv : BIDGPSDS
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_dba_feature.csv : BIREC
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_dba_feature.csv : BIRGPSCA
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_dba_feature.csv : BIRGPSGS
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_dba_feature.csv : CMDEV1
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_dba_feature.csv : COG11DEV
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_dba_feature.csv : COG11REC
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_dba_feature.csv : COGDEV
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_dba_feature.csv : COGPRE
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_dba_feature.csv : DSDEV
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_dba_feature.csv : DSDEVPFE
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_dba_feature.csv : DSPOC
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_dba_feature.csv : DSREC
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_dba_feature.csv : DWDEV
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_dba_feature.csv : DWREC
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_dba_feature.csv : PLANTST
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_dba_feature.csv : COGBAC
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_dba_feature.csv : COGBACDW
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_dba_feature.csv : COGDP1DW
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_dba_feature.csv : COGDV2
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_dba_feature.csv : COGIP1DW
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_dba_feature.csv : DSTBACBI
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_dba_feature.csv : DSTDEVBI
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_dba_feature.csv : DSTDEVEX
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_dba_feature.csv : DSTRECBI
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_dba_feature.csv : DSTRECEX
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_dba_feature.csv : BIPRE
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_dba_feature.csv : COG11PRE
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_dba_feature.csv : DSPRE
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_dba_feature.csv : DWPRE
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_dba_feature.csv : BDOLL
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_dba_feature.csv : BIPRO
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_dba_feature.csv : COG11PRO
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_dba_feature.csv : COGPRO
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_dba_feature.csv : DSPRO
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_dba_feature.csv : DWPRO
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_dba_feature.csv : PLANPRO
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_dba_feature.csv : DSTTECEX
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_dba_feature.csv : BRMAN
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_dba_feature.csv : DSNBAC
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_dba_feature.csv : DSNREP
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_dba_feature.csv : HRBAC
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_dba_feature.csv : HRDEV
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_dba_feature.csv : HRFOR
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_dba_feature.csv : HRINT
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_dba_feature.csv : HRREF
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_dba_feature.csv : HRREP
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_dba_feature.csv : DSNPRE
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_dba_feature.csv : HRPR2
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_dba_feature.csv : HRPRE
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_dba_feature.csv : DSNPRO
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_dba_feature.csv : HRPRO
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_dba_feature.csv : HRPROD
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_dba_feature.csv : DSNREC
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_dba_feature.csv : HRREC
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_dba_feature.csv : ESBPREP1
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_dba_feature.csv : MDMPREP1
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_dba_feature.csv : SPOTPREP1
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_dba_feature.csv : PFEPRE
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_dba_feature.csv : TIBPRE
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_dba_feature.csv : ESBPROD1
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_dba_feature.csv : MDMPROD1
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_dba_feature.csv : SPOTPROD1
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_dba_feature.csv : PFEPRO
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_dba_feature.csv : TIBPRO
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_dba_feature.csv : PFETEC
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_dba_feature.csv : TIBTEC
+-----------------
+ recuperation spatial : : génération du fichier ./audit_spatial.txt
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_options.csv : PSOBAS
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_options.csv : ESBDEV1
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_options.csv : ESBREC1
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_options.csv : ESBTEST1
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_options.csv : MDMDEV1
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_options.csv : MDMREC1
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_options.csv : MDMTEST1
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_options.csv : PFEDEV
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_options.csv : PFEINT
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_options.csv : PFEREC
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_options.csv : SPOTREC1
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_options.csv : TIBDP1
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_options.csv : TIBINT
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_options.csv : TIBREC
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_options.csv : PSOBAC
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_options.csv : PSODEV
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_options.csv : PSODP1
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_options.csv : PSOINT
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_options.csv : PSOIP1
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_options.csv : PSOREF
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_options.csv : PSOSBY
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_options.csv : BIDEV
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_options.csv : BIDEV2
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_options.csv : BIDGPS
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_options.csv : BIDGPSBA
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_options.csv : BIDGPSCO
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_options.csv : BIDGPSDS
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_options.csv : BIREC
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_options.csv : BIRGPSCA
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_options.csv : BIRGPSGS
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_options.csv : CMDEV1
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_options.csv : COG11DEV
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_options.csv : COG11REC
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_options.csv : COGDEV
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_options.csv : COGPRE
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_options.csv : DSDEV
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_options.csv : DSDEVPFE
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_options.csv : DSPOC
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_options.csv : DSREC
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_options.csv : DWDEV
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_options.csv : DWREC
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_options.csv : PLANTST
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_options.csv : COGBAC
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_options.csv : COGBACDW
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_options.csv : COGDP1DW
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_options.csv : COGDV2
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_options.csv : COGIP1DW
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_options.csv : DSTBACBI
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_options.csv : DSTDEVBI
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_options.csv : DSTDEVEX
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_options.csv : DSTRECBI
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_options.csv : DSTRECEX
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_options.csv : BIPRE
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_options.csv : COG11PRE
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_options.csv : DSPRE
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_options.csv : DWPRE
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_options.csv : BDOLL
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_options.csv : BIPRO
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_options.csv : COG11PRO
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_options.csv : COGPRO
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_options.csv : DSPRO
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_options.csv : DWPRO
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_options.csv : PLANPRO
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_options.csv : DSTTECEX
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_options.csv : BRMAN
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_options.csv : DSNBAC
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_options.csv : DSNREP
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_options.csv : HRBAC
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_options.csv : HRDEV
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_options.csv : HRFOR
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_options.csv : HRINT
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_options.csv : HRREF
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_options.csv : HRREP
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_options.csv : DSNPRE
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_options.csv : HRPR2
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_options.csv : HRPRE
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_options.csv : DSNPRO
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_options.csv : HRPRO
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_options.csv : HRPROD
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_options.csv : DSNREC
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_options.csv : HRREC
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_options.csv : ESBPREP1
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_options.csv : MDMPREP1
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_options.csv : SPOTPREP1
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_options.csv : PFEPRE
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_options.csv : TIBPRE
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_options.csv : ESBPROD1
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_options.csv : MDMPROD1
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_options.csv : SPOTPROD1
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_options.csv : PFEPRO
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_options.csv : TIBPRO
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_options.csv : PFETEC
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_options.csv : TIBTEC
+-----------------
+ recuperation segments partitionnes : génération du fichier ./audit_part.txt
+-----------------
+process ./data/sbaspsoora1_PSOBAS/sbaspsoora1_PSOBAS_segments.csv
+process ./data/sdevora1_ESBDEV1/sdevora1_ESBDEV1_segments.csv
+process ./data/sdevora1_ESBREC1/sdevora1_ESBREC1_segments.csv
+process ./data/sdevora1_ESBTEST1/sdevora1_ESBTEST1_segments.csv
+process ./data/sdevora1_MDMDEV1/sdevora1_MDMDEV1_segments.csv
+process ./data/sdevora1_MDMREC1/sdevora1_MDMREC1_segments.csv
+process ./data/sdevora1_MDMTEST1/sdevora1_MDMTEST1_segments.csv
+process ./data/sdevora1_PFEDEV/sdevora1_PFEDEV_segments.csv
+process ./data/sdevora1_PFEINT/sdevora1_PFEINT_segments.csv
+process ./data/sdevora1_PFEREC/sdevora1_PFEREC_segments.csv
+process ./data/sdevora1_SPOTREC1/sdevora1_SPOTREC1_segments.csv
+process ./data/sdevora1_TIBDP1/sdevora1_TIBDP1_segments.csv
+process ./data/sdevora1_TIBINT/sdevora1_TIBINT_segments.csv
+process ./data/sdevora1_TIBREC/sdevora1_TIBREC_segments.csv
+process ./data/sdevpsoora1_PSOBAC/sdevpsoora1_PSOBAC_segments.csv
+process ./data/sdevpsoora1_PSODEV/sdevpsoora1_PSODEV_segments.csv
+process ./data/sdevpsoora1_PSODP1/sdevpsoora1_PSODP1_segments.csv
+process ./data/sdevpsoora1_PSOINT/sdevpsoora1_PSOINT_segments.csv
+process ./data/sdevpsoora1_PSOIP1/sdevpsoora1_PSOIP1_segments.csv
+process ./data/sdevpsoora1_PSOREF/sdevpsoora1_PSOREF_segments.csv
+process ./data/sdevpsoora1_PSOSBY/sdevpsoora1_PSOSBY_segments.csv
+process ./data/sdwdev1_BIDEV/sdwdev1_BIDEV_segments.csv
+process ./data/sdwdev1_BIDEV2/sdwdev1_BIDEV2_segments.csv
+process ./data/sdwdev1_BIDGPS/sdwdev1_BIDGPS_segments.csv
+process ./data/sdwdev1_BIDGPSBA/sdwdev1_BIDGPSBA_segments.csv
+process ./data/sdwdev1_BIDGPSCO/sdwdev1_BIDGPSCO_segments.csv
+process ./data/sdwdev1_BIDGPSDS/sdwdev1_BIDGPSDS_segments.csv
+process ./data/sdwdev1_BIREC/sdwdev1_BIREC_segments.csv
+process ./data/sdwdev1_BIRGPSCA/sdwdev1_BIRGPSCA_segments.csv
+process ./data/sdwdev1_BIRGPSGS/sdwdev1_BIRGPSGS_segments.csv
+process ./data/sdwdev1_CMDEV1/sdwdev1_CMDEV1_segments.csv
+process ./data/sdwdev1_COG11DEV/sdwdev1_COG11DEV_segments.csv
+process ./data/sdwdev1_COG11REC/sdwdev1_COG11REC_segments.csv
+process ./data/sdwdev1_COGDEV/sdwdev1_COGDEV_segments.csv
+process ./data/sdwdev1_COGPRE/sdwdev1_COGPRE_segments.csv
+process ./data/sdwdev1_DSDEV/sdwdev1_DSDEV_segments.csv
+process ./data/sdwdev1_DSDEVPFE/sdwdev1_DSDEVPFE_segments.csv
+process ./data/sdwdev1_DSPOC/sdwdev1_DSPOC_segments.csv
+process ./data/sdwdev1_DSREC/sdwdev1_DSREC_segments.csv
+process ./data/sdwdev1_DWDEV/sdwdev1_DWDEV_segments.csv
+process ./data/sdwdev1_DWREC/sdwdev1_DWREC_segments.csv
+process ./data/sdwdev1_PLANTST/sdwdev1_PLANTST_segments.csv
+process ./data/sdwdev2_COGBAC/sdwdev2_COGBAC_segments.csv
+process ./data/sdwdev2_COGBACDW/sdwdev2_COGBACDW_segments.csv
+process ./data/sdwdev2_COGDP1DW/sdwdev2_COGDP1DW_segments.csv
+process ./data/sdwdev2_COGDV2/sdwdev2_COGDV2_segments.csv
+process ./data/sdwdev2_COGIP1DW/sdwdev2_COGIP1DW_segments.csv
+process ./data/sdwdev2_DSTBACBI/sdwdev2_DSTBACBI_segments.csv
+process ./data/sdwdev2_DSTDEVBI/sdwdev2_DSTDEVBI_segments.csv
+process ./data/sdwdev2_DSTDEVEX/sdwdev2_DSTDEVEX_segments.csv
+process ./data/sdwdev2_DSTRECBI/sdwdev2_DSTRECBI_segments.csv
+process ./data/sdwdev2_DSTRECEX/sdwdev2_DSTRECEX_segments.csv
+process ./data/sdwpre1_BIPRE/sdwpre1_BIPRE_segments.csv
+process ./data/sdwpre1_COG11PRE/sdwpre1_COG11PRE_segments.csv
+process ./data/sdwpre1_DSPRE/sdwpre1_DSPRE_segments.csv
+process ./data/sdwpre1_DWPRE/sdwpre1_DWPRE_segments.csv
+process ./data/sdwpro1_BDOLL/sdwpro1_BDOLL_segments.csv
+process ./data/sdwpro1_BIPRO/sdwpro1_BIPRO_segments.csv
+process ./data/sdwpro1_COG11PRO/sdwpro1_COG11PRO_segments.csv
+process ./data/sdwpro1_COGPRO/sdwpro1_COGPRO_segments.csv
+process ./data/sdwpro1_DSPRO/sdwpro1_DSPRO_segments.csv
+process ./data/sdwpro1_DWPRO/sdwpro1_DWPRO_segments.csv
+process ./data/sdwpro1_PLANPRO/sdwpro1_PLANPRO_segments.csv
+process ./data/sdwtec1_DSTTECEX/sdwtec1_DSTTECEX_segments.csv
+process ./data/sgsadm1_BRMAN/sgsadm1_BRMAN_segments.csv
+process ./data/sgsoradev1_DSNBAC/sgsoradev1_DSNBAC_segments.csv
+process ./data/sgsoradev1_DSNREP/sgsoradev1_DSNREP_segments.csv
+process ./data/sgsoradev1_HRBAC/sgsoradev1_HRBAC_segments.csv
+process ./data/sgsoradev1_HRDEV/sgsoradev1_HRDEV_segments.csv
+process ./data/sgsoradev1_HRFOR/sgsoradev1_HRFOR_segments.csv
+process ./data/sgsoradev1_HRINT/sgsoradev1_HRINT_segments.csv
+process ./data/sgsoradev1_HRREF/sgsoradev1_HRREF_segments.csv
+process ./data/sgsoradev1_HRREP/sgsoradev1_HRREP_segments.csv
+process ./data/sgsorapre1_DSNPRE/sgsorapre1_DSNPRE_segments.csv
+process ./data/sgsorapre1_HRPR2/sgsorapre1_HRPR2_segments.csv
+process ./data/sgsorapre1_HRPRE/sgsorapre1_HRPRE_segments.csv
+process ./data/sgsorapro1_DSNPRO/sgsorapro1_DSNPRO_segments.csv
+process ./data/sgsorapro1_HRPRO/sgsorapro1_HRPRO_segments.csv
+process ./data/sgsorapro2_HRPROD/sgsorapro2_HRPROD_segments.csv
+process ./data/sgsorarec1_DSNREC/sgsorarec1_DSNREC_segments.csv
+process ./data/sgsorarec1_HRREC/sgsorarec1_HRREC_segments.csv
+process ./data/spreora1_ESBPREP1/spreora1_ESBPREP1_segments.csv
+process ./data/spreora1_MDMPREP1/spreora1_MDMPREP1_segments.csv
+process ./data/spreora1_SPOTPREP1/spreora1_SPOTPREP1_segments.csv
+process ./data/sprepfeora1_PFEPRE/sprepfeora1_PFEPRE_segments.csv
+process ./data/sprepfeora1_TIBPRE/sprepfeora1_TIBPRE_segments.csv
+process ./data/sproora1_ESBPROD1/sproora1_ESBPROD1_segments.csv
+process ./data/sproora1_MDMPROD1/sproora1_MDMPROD1_segments.csv
+process ./data/sproora1_SPOTPROD1/sproora1_SPOTPROD1_segments.csv
+process ./data/spropfeora1_PFEPRO/spropfeora1_PFEPRO_segments.csv
+process ./data/spropfeora1_TIBPRO/spropfeora1_TIBPRO_segments.csv
+process ./data/stecpfeora1_PFETEC/stecpfeora1_PFETEC_segments.csv
+process ./data/stecpfeora1_TIBTEC/stecpfeora1_TIBTEC_segments.csv
+-----------------
+ recuperation cpu max ./audit_cpu_max.txt
+-----------------

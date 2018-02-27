@@ -1,0 +1,7 @@
+2018-02-16T16:01:53.262
+ERROR:
+psql:C:/dev_setra/licence_conformity/data/bsp/temp/create_schema.sql:8: ERREUR:  le rôle « licence_conformity » existe déjà
+
+RESULT:
+Vous �tes maintenant connect� � la base de donn�es � licence_conformity � en tant qu'utilisateur � postgres �.
+CREATE SCHEMA

@@ -1,0 +1,255 @@
+   
+<!-- liste des clients-->		
+<table id="admin_client" bottom="0" error="Check your postgres connexion string !">
+<thead>
+	<tr>     
+		<th width="200px" key>client</th>  
+		<th width="40px" ></th> 
+		<th width="40px"></th>  					
+	</tr>
+</thead>
+</table>
+
+<!-- liste des utilisateurs-->		
+<table id="admin_user" bottom="0">
+<thead>
+	<tr>     
+		<th width="0" key>ID</th> 
+		<th width="145px">User</th> 
+		<th width="150px">Role</th>  
+		<th width="0" >Password</th>  						
+		<th width="40px"></th>  
+		<th width="40px"></th>  
+		
+	</tr>
+</thead>
+</table>
+                 
+<!-- liste des scripts-->		
+<table  id="admin_script" bottom="60">	 
+  <thead>
+	<tr>
+	  <th width="200px" key>Script</th>
+	  <th width="150px"> Last modified</th>
+	  <th width="40px"></th>
+	</tr>
+  </thead>			 
+  <tbody></tbody>
+</table>
+		
+<!-- outils scripts-->		
+<div id="admin_script_tools">               
+	
+	<form id="admin_script_upload" enctype="multipart/form-data" action="" method="post" target="_target">
+	  <input id="admin_script_choose_input" name="uploaded_file" type="file" accept=".zip" />
+	</form>
+
+	<a id="admin_script_choose"   class="btn admin_script_zip  " href="#" data-toggle="tooltip"
+		  title="Upload scripts">
+	   <i class="fa fa-upload fa-2x"></i> <span class="trad">Upload</span></a>
+	
+	<a id="admin_script_download"   class="btn admin_script_zip " href="#" data-toggle="tooltip" 
+		title="Download scripts">
+	  <i class="fa fa-download fa-2x"></i> <span class="trad">download</span></a>
+	
+</div>   
+
+<!-- configuration-->		
+<table  id="admin_config" bottom="60" right="0">	 
+  <thead>
+	<tr>
+	  <th width="200px" key>Parameter</th>
+	  <th width="250px"> Value</th>
+		
+	</tr>
+  </thead>			 
+  <tbody></tbody>
+</table>
+<!-- configuration du serveur-->
+<div id="admin_config_tools" >
+
+	<form id="admin_config_upload" enctype="multipart/form-data" action="" method="post" target="_target">
+	  <input id="admin_config_choose_input" name="uploaded_file" type="file" accept=".zip" />
+	</form>
+	
+	<a id="admin_config_download"   class="btn admin_config_zip" 
+		href="#" data-toggle="tooltip"  title="Download application">		 
+		<i class="fa fa-download fa-2x"></i> <span class="trad">Download App</span>
+	</a>	
+
+	<a id="admin_config_choose"   class="btn admin_config_zip" 
+		href="#" data-toggle="tooltip"  title="Upload application">		 
+		<i class="fa fa-upload fa-2x"></i> <span class="trad">Upload App</span>
+	</a>	
+	
+	<a id="admin_config_modify"   class="btn admin_config_zip" 
+		href="#" data-toggle="tooltip"  title="Modify Parameter">
+		<i class="fa fa-pencil fa-2x"></i> <span class="trad">Modify</span>
+	</a>	
+	
+	<a id="admin_config_create_database"   class="btn admin_config_zip  " 
+		href="#" data-toggle="tooltip"  title="Create database">
+		<i class="fa fa-database fa-2x"></i> <span class="trad">Create DB</span>
+	</a>	
+</div>
+	
+<!-- fenetre d'edition d'un client-->
+<div class="modal text-center" id="admin_client_edit_modal"  data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+	  <span class="modal_title"/>
+	   <span class="fa fa-2x fa-window-close modal_close"/>
+		  <div class="row">
+			<label for="admin_client_edit_name" class="col-3 trad">Client</label>
+			<input id="admin_client_edit_name" class="col-6"/>
+			<div id="admin_client_edit_name_alert" class="col-3"></div>
+		  </div>
+		  
+		   
+		   <div class="row" id="admin_client_edit_validate_cancel">
+			<div class="col-1"></div>
+			<button id="admin_client_edit_validate" class="btn btn-primary col-4 trad modal_validate">Validate</button>
+			<div class="col-2"></div>
+			<button id="admin_client_edit_cancel" class="btn col-4 trad modal_cancel">Cancel</button>
+		  </div>
+		 
+	  </div>
+	 
+  </div>
+</div>
+	
+<!-- fenetre d'edition d'un utilisateur-->	
+<div class="modal text-center" id="admin_user_edit_modal"  data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+	  <span class="modal_title"/>
+	   <span class="fa fa-2x fa-window-close modal_close"/>
+		  <div class="row">
+			<label for="admin_user_edit_name" class="col-3 trad">User</label>
+			<input id="admin_user_edit_name" class="col-6"/>
+			<div id="admin_user_edit_name_alert" class="col-3 "></div>
+		  </div>
+		  
+		   <div class="row">
+			<label for="admin_user_edit_role" class="col-3 trad">Role</label>
+			<select id="admin_user_edit_role" class="col-6">
+				<option value="user" class="trad">User</option>
+				<option value="superuser"class="trad">Super User</option>
+				<option value="admin"class="trad">Admin</option>
+				<option value="superadmin"class="trad">Super Admin</option>
+			</select>
+		  </div>
+		  <div class="row">
+			<label for="admin_user_edit_pass" class="col-3 trad">Password</label>
+			<input id="admin_user_edit_pass" type="password" value="test" class="col-6"/>
+			<input id="admin_user_edit_show_pass" type="checkbox"/>
+		  </div>
+		   <div class="row" id="admin_user_edit_validate_cancel">
+			<div class="col-1"></div>
+			<button id="admin_user_edit_validate" class="btn btn-primary col-4 trad modal_validate">Validate</button>
+			<div class="col-2"></div>
+			<button id="admin_user_edit_cancel" class="btn col-4 trad modal_cancel">Cancel</button>
+		  </div>
+		 
+	  </div>
+	 
+  </div>
+</div>
+	
+<!-- fenetre d'edition d'un script-->	
+ <div class="modal text-center" id="admin_script_edit_modal"  data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<span class="modal_title"/>
+		  <span class="fa fa-2x fa-window-close modal_close"/>
+		  <div class="row">
+		   
+		  </div>
+		  
+		   <div class="row">
+				<textarea id="admin_script_editor" rows="18" cols="120"></textarea>
+				<textarea id="admin_script_log" rows="8" cols="120"></textarea>	
+		  </div>
+		 
+		   <div class="row" id="admin_script_edit_validate_cancel">
+			<div class="col-1"></div>
+			<button id="admin_script_edit_validate" class="btn btn-primary col-4 trad modal_validate">Validate</button>
+			<div class="col-2"></div>
+			<button id="admin_script_edit_cancel" class="btn col-4 trad modal_cancel">Cancel</button>
+		  </div>
+		 
+	  </div>
+	 
+  </div>
+</div>
+
+
+<!-- fenetre d'edition des parametres-->	
+<div class="modal text-center" id="admin_config_edit_modal"  data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+	  <span class="modal_title trad">Update parameters</span>
+	   <span class="fa fa-2x fa-window-close modal_close"/>
+	   
+		   <div class="row">
+			<label for="admin_config_connexion_string" class="col-4 trad">Connexion string</label>
+			<input id="admin_config_connexion_string"   type="text" class="col-6"/>	
+			<div class="col-2 admin_config_alert trad">Value need</div>			
+		  </div>
+		  
+		   <div class="row" >
+			<label for="admin_config_psql_path" class="col-4 trad">Psql path</label>
+			<input id="admin_config_psql_path"   type="text" class="col-6"/>	
+			<div class="col-2 admin_config_alert trad">Value need</div>			
+		  </div>
+		  
+		   <div class="row" >
+			<label for="admin_config_pgpass_path" class="col-4 trad">Pgpass path</label>
+			<input id="admin_config_pgpass_path"   type="text" class="col-6"/>	
+			<div class="col-2 admin_config_alert trad">Value need</div>			
+		  </div>
+		  
+		  <div class="row">
+			<label for="admin_config_http_server_port" class="col-4 trad">Http server port</label>
+			<input id="admin_config_http_server_port"   type="number" class="col-6"/>			
+		  </div>
+		  
+		   <div class="row">
+			<label for="admin_config_client" class="col-4 trad">Client</label>
+			<select id="admin_config_client_list" class="col-6">				
+			</select>
+		  </div>
+		  <div class="row">
+			<label for="admin_config_oracle_user" class="col-4 trad">Oracle user</label>
+			<input id="admin_config_oracle_user" type="text" value="" class="col-6 check_value"/>
+			<div class="col-2 admin_config_alert trad">Value need</div>
+		  </div>
+		  <div class="row">
+			<label for="admin_config_oracle_pass" class="col-4 trad">Oracle Password</label>
+			<input id="admin_config_oracle_pass" type="password" value="" class="col-6"/>
+			<input id="admin_config_oracle_show_pass" type="checkbox"/>
+		  </div>
+		  
+		   <div class="row">
+			<label for="admin_config_login_timeout" class="col-4 trad">login timeout</label>
+			<input id="admin_config_login_timeout"   type="number" class="col-6"/>			
+		  </div>
+		  
+		   <div class="row">
+			<label for="admin_config_audit_time" class="col-4 trad">Audit time</label>
+			<input id="admin_config_audit_time"  type="time" class="col-6"/>			
+		  </div>
+		  
+		   <div class="row" id="admin_config_edit_validate_cancel">
+			<div class="col-1"></div>
+			<button id="admin_config_edit_validate" class="btn btn-primary col-4 trad modal_validate">Validate</button>
+			<div class="col-2"></div>
+			<button id="admin_config_edit_cancel" class="btn col-4 trad modal_cancel">Cancel</button>
+		  </div>
+		 
+	  </div>
+	 
+  </div>
+</div>
+	
+	

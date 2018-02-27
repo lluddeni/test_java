@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<script src="assets/jquery/jquery.min.js"></script>
+	<script>
+	
+	
+	$( function()
+	{ 
+
+		$("#send").click(
+		function()
+		{
+			var mod = $("#mod").val();
+			var fct = $("#fct").val();
+		
+			$.get("/?mod="+mod+"&fct="+fct,
+			function(data)
+			{				
+				$("#result").html("<pre>"+data+"</pre>");
+			});
+			
+
+		}
+		);
+		
+		$("#upload_file").on("change",function()
+		{
+			var file = $("#upload_file")[0].files[0];
+			
+			$("#upload_inventory")[0].action=file.name+"?upload_file&mod=inventory&fct=import_inventory";
+			$("#upload_inventory")[0].submit();
+			
+			$("#upload_file").val("") ;			
+		});
+		
+		
+		var output_index = 0;
+		var output_time = "0";
+		setInterval(function()
+		{
+			$.get("/?mod=system&fct=state&index="+output_index+"&time="+output_time,
+			function(data)
+			{			
+				var p = data.indexOf("\n");
+				var header = data.substr(0,p).split(":");
+				output_time = header[0];
+				output_index = header[1];
+				var text = data.substr(p+1);
+				if(text!="")
+					$("#state").html("<pre>"+text+"</pre>");
+			});
+		},1000);
+
+	});
+	</script>
+</head>
+
+<body>
+	
+	<label for="mod" >Module</label>
+	<input type="text" name="mod" id="mod" value="inventory"></input>
+	<label for="fct" >Fonction</label>
+	<input type="text" name="fct" id="fct" value="update_history"></input>
+
+	<button id="send" >Envoyer</button>
+	
+	<form id="upload_inventory" 
+			enctype="multipart/form-data" 
+			action="/upload" method="post" target="_target">
+			<label id="upload_file_label" for="upload_file">Inventory</label>
+			<input  id="upload_file" name="uploaded_file" type="file" accept=".xlsx"/>			
+	</form>
+	<iframe name="_target" id="_target"></iframe>
+	<div id="state"></div>
+	<div id="result"></div>
+	
+	
+</body>
+
+</html>

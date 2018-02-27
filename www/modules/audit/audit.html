@@ -1,0 +1,82 @@
+<!-- liste des audits-->		
+<table id="audit_history" header="Audit List" searchbox clickfirst  bottom="60" >
+<thead>
+	<tr>     
+		<th width="40px" key></th>   
+		<th width="150px" >last audit</th>  
+		<th width="150px">last data</th>                                                                                    
+		<th width="150px">user</th>
+		<th width="150px">comment</th>					
+		<th width="40px">ZIP</th>
+	</tr>
+</thead>
+</table>
+
+<!-- affichage du rapport d'audit-->	
+
+<table id="audit_alert" header="Audit Alert"  searchbox right="0" >
+<thead>
+	<tr>     
+		<th width="0" key>id</th>   			
+		<th width="200px">board</th>
+		<th width="200px">target</th>
+		<th width="100px">Current</th>
+		<th width="100px">Expected</th>
+		<th width="100px">Ack user</th>
+		<th width="150px">Ack time</th>
+		<th >comment</th>
+	</tr>
+</thead>
+</table>
+<a id="audit_alert_ack" class="btn " href="#" data-toggle="tooltip" 
+			title="Acknowledge Alerts" >
+<i class="fa fa-check"></i> <span class="trad">Acknowledge</span></a> 
+	
+ <div id="audit_result_row"  bottom="0" right="0">
+
+	<div id="audit_result_title" class="table_title" > 
+		<span>   
+		Audit report
+		</span >
+		<select id="audit_boards">
+			
+		</select>
+		<div id="audit_find">
+			<span id="audit_find_prev" class="audit_find fa fa-arrow-left fa-2x"></span>
+			<span id="audit_find_count" class="audit_find">100/100</span>
+			<span id="audit_find_next" class="audit_find fa fa-arrow-right fa-2x"></span>
+		 </div>
+	</div>
+   <div id="audit_report_container" bottom="0"><pre id="audit_report" bottom="0"></pre></div>
+</div>                    
+    
+<!-- outils d'audit-->		
+<div id="audit_tools">               
+	<!-- modification de la config d'un serveur-->            
+			 <!-- import/export -->             
+
+		<form id="audit_upload" enctype="multipart/form-data" action="" method="post" target="_target">
+		<input id="audit_choose_input" name="uploaded_file" type="file" accept=".zip" />
+		</form>
+
+		<a id="audit_from_file"   class="btn audit_tools  " href="#" data-toggle="tooltip"
+			title="Upload audit data">
+			<i class="fa fa-upload fa-2x"></i> <span class="trad">Audit from file</span></a>
+				  
+		<a id="audit_from_local" class="btn audit_tools " href="#" data-toggle="tooltip" 
+			title="Launch new audit">
+		<i class="fa fa-cogs fa-2x"></i> <span class="trad">Audit from local</span></a>    
+
+		<a id="audit_renew" class="btn audit_tools " href="#" data-toggle="tooltip" 
+			title="Analyse ">
+		<i class="fa fa-refresh fa-2x"></i> <span class="trad">Renew</span></a>   
+	  
+		<a id="audit_print"   class="btn audit_tools " href="#" data-toggle="tooltip" 
+			title="Printable document">
+		<i class="fa fa-print fa-2x"></i> <span class="trad">Print</span></a>
+		
+		<a id="audit_docx"   class="btn audit_tools " href="#" data-toggle="tooltip" 
+			title="Upload docx">
+		<i class="fa fa-download fa-2x"></i> <span class="trad">Docx</span></a>
+</div>   
+	

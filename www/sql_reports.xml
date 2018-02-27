@@ -1,0 +1,12 @@
+<reports>
+	<report id="1">
+		<name>test</name>
+		<sql>
+			<![CDATA[SELECT * FROM pg_database ]]>
+		</sql>
+		<columns>
+			<column name="" visibility="false" link_id="2">
+			</columns>
+		</columns>
+	</report>
+</reports>

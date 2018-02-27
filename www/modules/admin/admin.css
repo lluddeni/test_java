@@ -1,0 +1,211 @@
+/*********************
+    client
+*********************/
+#admin_client
+{
+  position:absolute;
+
+}
+
+.admin_client_action
+{
+  width:30px;
+}
+
+.admin_client_name
+{
+  width:200px;
+}
+
+#admin_client_edit_name_alert
+{
+  color:red;
+  display:none;
+}
+
+#admin_client_edit_modal .modal-dialog
+{
+  padding-top:200px!important;
+}
+
+#admin_client_edit_modal .modal-content
+{
+  padding-top:50px!important;
+}
+
+/*********************
+    user
+*********************/
+
+#admin_user
+{
+  position:absolute; 
+  left:360px;
+}
+
+
+#admin_user_edit_modal .modal-dialog
+{
+  padding-top:200px!important;
+}
+
+#admin_user_edit_modal .modal-content
+{
+  padding-top:50px!important;
+}
+
+#admin_user_edit_name_alert
+{
+  color:red;
+  display:none;
+}
+
+
+#admin_user_edit_show_pass
+{
+  margin-top:10px;
+  margin-left:15px;
+}
+
+/*********************
+    scripts
+*********************/
+
+#admin_script
+{
+  position:absolute;
+  left:790px;
+}
+
+.admin_script_name
+{
+  width:200px;
+}
+
+#admin_script_editor
+{
+margin-left:20px;
+margin-top:15px;
+resize: none;
+white-space: pre;  
+overflow: auto;
+padding:5px;
+}
+
+#admin_script_log
+{
+ margin-top:5px;
+margin-left:20px;
+resize: none;
+white-space: pre;  
+overflow: auto;
+padding:5px;
+}
+
+
+#admin_script_editor[readonly]
+{
+  background-color:lightgray;
+}
+
+#admin_script_upload
+{
+  display:none;
+}
+.admin_script_modify
+{
+   margin-left:20px;
+}
+
+.admin_script_zip
+{
+   margin-left:20px;
+}
+
+
+#admin_script_edit_modal .modal-dialog
+{
+  margin-top:20px;
+  max-width:910px;
+}
+#admin_script_edit_modal .modal-content
+{
+
+  margin:auto!important;
+}
+
+
+#admin_script_tools
+{
+  position:absolute;
+  bottom:10px;
+  left:850px
+}
+
+#admin_script_edit_modal .modal-content
+{
+  margin:0!important;
+}
+
+#admin_script_edit_modal .modal-content
+{
+  width:910px!important;
+}
+
+/*******************
+    config
+*******************/
+
+#admin_config
+{
+    position:absolute;
+    left:1235px;
+   
+}
+
+#admin_config_tools
+{
+  position:absolute;
+  bottom:10px;
+  left:1250px;
+}
+
+#admin_config_upload
+{
+  display:none;
+}
+.admin_config_zip
+{
+   margin-left:20px;
+}
+
+#admin_config_edit_modal .modal-dialog
+{
+  padding-top:100px!important;
+}
+
+
+
+#admin_config_edit_modal .modal-content
+{
+  padding-top:50px!important;
+}
+
+.admin_config_alert
+{
+  color:red;
+  display:none;
+}
+
+
+#admin_config_oracle_show_pass
+{
+  margin-top:10px;
+  margin-left:15px;
+}
+
+#admin_config_create_database
+{
+  background-color:lightpink;
+  display:false;
+}

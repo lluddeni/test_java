@@ -1,0 +1,62 @@
+
+/***************************************/
+/*               inventory             */
+/***************************************/
+#inventory_upload_xlsx,#inventory_upload_doc
+{
+  display:none;
+}
+
+
+#inventory_select_table
+{
+  position: absolute;
+  left:190px;
+  top:3px;
+  z-index: 10;
+  
+}
+
+#inventory_action
+{
+  position:absolute;
+
+}
+
+#inventory_import_button
+{
+  position:absolute;
+  bottom:10px;
+}
+
+.inventory_table
+{
+   position:absolute;
+    margin-bottom:50px;
+}
+#inventory_detail_row
+{
+  position:absolute;
+  left:750px;
+}
+
+#inventory_edit_button
+{
+  position:absolute;
+  bottom:10px;
+  left:750px;
+}
+
+#inventory_edit_validate_button
+{
+  position:absolute;
+  bottom:10px;
+  right:50px;
+  visibility:hidden;
+}
+
+.inventory_error
+{
+  background-color:red;
+  color:white;
+}

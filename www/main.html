@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Licence Conformity</title>
+
+  <link href="assets/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <!-- Bootstrap core CSS-->
+  <link href="model/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Custom fonts for this template-->
+  <link href="model/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+ 
+  <link href="main.css" rel="stylesheet">
+  <link href="table.css" rel="stylesheet">
+  <link href="modules/inventory/inventory.css" rel="stylesheet">
+  <link href="modules/reviewlite/reviewlite.css" rel="stylesheet">
+  <link href="modules/audit/audit.css" rel="stylesheet">
+  <link href="modules/admin/admin.css" rel="stylesheet">
+</head>
+<!--sticky-footer-->
+<body class=" bg-dark" >
+
+<!-- tooltip-->		
+ <div id="tooltip">
+	 <div id="tooltip_arrow_up" class="tooltip_arrow"></div>
+	 <span></span>
+	 <div id="tooltip_arrow_down"  class="tooltip_arrow"></div>
+ </div>
+ 
+ <!-- frame de reception des submits-->		
+  <iframe name="_target" id="_target"></iframe>
+  <!-- Navigation-->
+  <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+   
+   <!-- version-->		
+    <img id="title_icon" src="assets/images/logo1.png"/>
+    <a id="main_version" class="navbar-brand trad" href="#" data-toggle="tooltip" title="version">Licence<br/>Conformity</a>
+   
+   <!-- menu tab-->		
+    <div class="navbar-collapse" >
+      <ul class="navbar-nav ">
+        <li class="nav-item"  >
+          <a class="nav-link" href="#" data-target="inventory">
+            <i class="fa fa-fw fa-history"></i>
+            <span class="nav-link-text trad">Inventory Historical</span>
+          </a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="#"  data-target="reviewlite">
+            <i class="fa fa-fw fa-database"></i>
+            <span class="nav-link-text trad">Review lite</span>
+          </a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="#" data-target="audit">
+            <i class="fa fa-fw fa-bar-chart"></i>
+            <span class="nav-link-text trad">Audit</span>
+          </a>
+        </li>
+       
+        <li class="nav-item"  >
+          <a class="nav-link " data-toggle="collapse" href="#" data-target="admin" >
+            <i class="fa fa-fw fa-user"></i>
+            <span class="nav-link-text trad">Administration</span>
+          </a>
+         
+        </li>
+      
+      
+      </ul>
+     <!-- info login-->		   
+      <ul class="navbar-nav ml-auto">
+       <li>
+         <a class="nav-link" >
+              <i class="fa fa-fw fa-user"></i><span id="main_user" class="trad"><span></a>
+       </li>
+        <li>
+         <a class="nav-link" >
+              <i class="fa fa-fw fa-database"></i><span id="main_client"class="trad"><span></a>
+       </li>
+        <li >
+        
+          <a class="nav-link" id="main_logout">
+            <i class="fa fa-fw fa-sign-out"></i><span class="trad">Logout<span></a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- emplacement des panel-->		
+    <div  id="content_panel" class="content_panel" >
+     
+    
+    </div>
+  
+  <!-- fenetre de login-->		
+    <div class="modal text-center" id="logins_modal"  data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+              <div class="row">
+                <label for="login_user" class="col-3">User</label>
+                <input id="login_user" class="col-8">
+              </div>
+              <div class="row">
+                <label for="login_pass" class="col-3">Password</label>
+                <input id="login_pass" class="col-8">
+              </div>
+              <button id="login_connect" class="btn btn-primary">Login</button>
+          </div>
+         
+      </div>
+    </div>
+   <!-- fenetre d'info-->		
+    <div class="modal text-center" id="main_info"  data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="row">
+                <div id="main_info_text"></div>
+              </div>
+              <div class="row" id="main_info_content">
+              </div>
+              <div class="row">
+                 <i id="main_wait" class="fa fa-refresh  fa-spin fa-3x fa-fw"></i>
+              
+              </div>
+
+              <div class="row">
+                <button id="main_info_ok" class="btn btn-primary">OK</button>
+              </div>
+
+              <div class="row" id="main_info_validate_cancel">
+                <div class="col-1"></div>
+                <button id="main_info_validate" class="btn btn-primary col-4 trad">Validate</button>
+                <div class="col-2"></div>
+                <button id="main_info_cancel" class="btn col-4 trad">Cancel</button>
+              </div>
+          </div>
+         
+      </div>
+    </div>
+
+    <!-- jquery core JavaScript-->
+    <script src="model/vendor/jquery/jquery.min.js"></script>
+
+
+     <!--chargement des modules-->
+     <script src="modules/inventory/inventory.js"></script>   
+     <script src="modules/reviewlite/reviewlite.js"></script>   
+     <script src="modules/audit/audit.js"></script> 
+     <script src="modules/admin/admin.js"></script>     
+     <script src="trads.js"></script>  
+     <script src="table.js"></script>  
+     <script src="main.js"></script>
+</body>
+
+</html>

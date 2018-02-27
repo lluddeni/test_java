@@ -1,0 +1,5 @@
+2018-02-23T16:48:13.397
+ERROR:
+psql:C:/dev_setra/licence_conformity/data/bsp/temp/copy_feature_pack_after.sql:1: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « pk_feature_pack »
+D�TAIL : La clé « (feature)=(Partitioning (system)) » existe déjà.
+CONTEXTE : COPY feature_pack, ligne 1

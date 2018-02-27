@@ -1,0 +1,48 @@
+/*************************/
+/*     reviewlite        */
+/*************************/
+#reviewlite_server
+{
+  position:absolute;
+
+}
+#reviewlite_database
+{
+  position:absolute;
+ 
+  left:1000px;
+
+}
+#reviewlite_upload
+{
+  display:none;
+}
+
+
+
+
+#reviewlite_tools
+{
+  position:absolute;
+  bottom:10px;
+}
+
+
+#reviewlite_modify
+{
+  margin-left:0px;
+}
+
+.reviewlite_tools
+{
+ 
+  height:50px;
+  padding:10px;
+  margin-left:20px;
+
+}
+
+#reviewlite_choose
+{
+  margin-left:150px;
+}
