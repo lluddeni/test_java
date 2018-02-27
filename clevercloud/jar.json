@@ -1,6 +1,6 @@
 {
   "deploy": {
   
-    "jarName": "dist/LicenceConformity.jar"
+    "jarName": "LicenceConformity.jar"
   }
 }
