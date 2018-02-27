@@ -1,6 +1,5 @@
 {
   "deploy": {
-  
-    "jarName": "LicenceConformity.jar"
+      "jarName": "LicenceConformity.jar"
   }
 }
